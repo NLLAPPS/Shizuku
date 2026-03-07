@@ -7,12 +7,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Process
 import android.text.method.LinkMovementMethod
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
-import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
@@ -23,15 +21,12 @@ import moe.shizuku.manager.app.AppBarActivity
 import moe.shizuku.manager.app.SnackbarHelper
 import moe.shizuku.manager.databinding.AboutDialogBinding
 import moe.shizuku.manager.databinding.HomeActivityBinding
-import moe.shizuku.manager.home.showAccessibilityDialog
 import moe.shizuku.manager.ktx.toHtml
 import moe.shizuku.manager.management.AppsViewModel
 import moe.shizuku.manager.settings.SettingsActivity
 import moe.shizuku.manager.utils.AppIconCache
-import moe.shizuku.manager.utils.EnvironmentUtils
 import moe.shizuku.manager.utils.SettingsHelper
 import moe.shizuku.manager.utils.ShizukuStateMachine
-import rikka.core.content.asActivity
 import rikka.core.ktx.unsafeLazy
 import rikka.lifecycle.Status
 import rikka.recyclerview.addEdgeSpacing
@@ -105,19 +100,19 @@ abstract class HomeActivity : AppBarActivity() {
         ShizukuStateMachine.addListener(stateListener)
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        intent?.let {
-            val showDialog = it.getBooleanExtra(HomeActivity.EXTRA_SHOW_PAIRING_DIALOG, false)
-            if (showDialog) showAccessibilityDialog()
 
-            val startWadb = it.getBooleanExtra(HomeActivity.EXTRA_START_SERVICE_VIA_WADB, false)
-            if (startWadb) {
-                val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-                nm.cancel(AdbPairingService.NOTIFICATION_ID)
-                StartWirelessAdbViewHolder.start(this, lifecycleScope)
-            }
+        val showDialog = intent.getBooleanExtra(HomeActivity.EXTRA_SHOW_PAIRING_DIALOG, false)
+        if (showDialog) showAccessibilityDialog()
+
+        val startWadb = intent.getBooleanExtra(HomeActivity.EXTRA_START_SERVICE_VIA_WADB, false)
+        if (startWadb) {
+            val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            nm.cancel(AdbPairingService.NOTIFICATION_ID)
+            StartWirelessAdbViewHolder.start(this, lifecycleScope)
         }
+
     }
 
     override fun onResume() {
@@ -171,10 +166,11 @@ abstract class HomeActivity : AppBarActivity() {
                 binding.btnClose.setOnClickListener {
                     dialog.dismiss()
                 }
-                
+
                 dialog.show()
                 true
             }
+
             R.id.action_stop -> {
                 if (ShizukuStateMachine.isRunning()) {
                     MaterialAlertDialogBuilder(this)
@@ -188,10 +184,12 @@ abstract class HomeActivity : AppBarActivity() {
                 }
                 true
             }
+
             R.id.action_settings -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
