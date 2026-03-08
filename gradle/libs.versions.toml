@@ -1,4 +1,9 @@
 [versions]
+appPackageName = "moe.shizuku.privileged.api"
+appExtraBinder ="moe.shizuku.privileged.api.intent.extra.BINDER"
+
+
+
 appVersionName = "1"
 appVersionCode = "1"
 compileSdkVersion = "36"
@@ -8,8 +13,6 @@ targetSdkVersion = "36"
 javaVersion = "21" # JavaVersion.VERSION_21
 ndkVersion = "29.0.14206865"
 buildToolsVersion = "36.1.0"
-
-
 annotation = "1.9.1"
 appcompatVersion = "1.7.1"
 appiconloader = "1.5.0"
@@ -45,7 +48,6 @@ workRuntimeKtx = "2.11.1"
 
 
 [libraries]
-
 androidx-appcompat =  { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 androidx-browser = { module = "androidx.browser:browser", version.ref = "browser" }
@@ -65,9 +67,6 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 hiddenapibypass = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
-
-
-
 html-ktx = { module = "dev.rikka.rikkax.html:html-ktx", version.ref = "htmlKtx" }
 insets = { module = "dev.rikka.rikkax.insets:insets", version.ref = "insets" }
 layoutinflater = { module = "dev.rikka.rikkax.layoutinflater:layoutinflater", version.ref = "layoutinflater" }
@@ -77,8 +76,6 @@ parcelablelist = { module = "dev.rikka.rikkax.parcelablelist:parcelablelist", ve
 recyclerview-adapter = { module = "dev.rikka.rikkax.recyclerview:recyclerview-adapter", version.ref = "recyclerviewAdapter" }
 recyclerview-ktx = { module = "dev.rikka.rikkax.recyclerview:recyclerview-ktx", version.ref = "recyclerviewKtx" }
 simplemenu-preference = { module = "dev.rikka.rikkax.preference:simplemenu-preference", version.ref = "simplemenuPreference" }
-
-
 libcxx = { module = "org.lsposed.libcxx:libcxx", version.ref = "libcxx" }
 lifecycle-resource-livedata = { module = "dev.rikka.rikkax.lifecycle:lifecycle-resource-livedata", version.ref = "lifecycleResourceLivedata" }
 hidden-compat = { group = "dev.rikka.hidden", name = "compat", version.ref = "hidden-api" }

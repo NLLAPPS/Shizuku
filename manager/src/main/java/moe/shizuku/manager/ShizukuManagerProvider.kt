@@ -20,7 +20,7 @@ import rikka.shizuku.server.ktx.workerHandler
 class ShizukuManagerProvider : ShizukuProvider() {
 
     companion object {
-        private const val EXTRA_BINDER = "moe.shizuku.privileged.api.intent.extra.BINDER"
+        private const val EXTRA_BINDER = BuildConfig.EXTRA_BINDER //"moe.shizuku.privileged.api.intent.extra.BINDER"
         private const val METHOD_SEND_USER_SERVICE = "sendUserService"
     }
 

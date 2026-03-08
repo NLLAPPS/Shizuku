@@ -8,6 +8,12 @@ android {
     defaultConfig {
         versionCode = libs.versions.appVersionCode.get().toInteger()
         versionName = libs.versions.appVersionName.get()
+
+        buildConfigField(
+                "String", "MANAGER_APPLICATION_ID", "\"${libs.versions.appPackageName.get()}\""
+        )
+
+
     }
     buildTypes {
         debug {

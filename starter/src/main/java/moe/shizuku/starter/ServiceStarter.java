@@ -16,12 +16,13 @@ import moe.shizuku.starter.util.IContentProviderCompat;
 import rikka.hidden.compat.ActivityManagerApis;
 import rikka.shizuku.ShizukuApiConstants;
 import rikka.shizuku.server.UserService;
+import rikka.shizuku.starter.BuildConfig;
 
 public class ServiceStarter {
 
     private static final String TAG = "ShizukuServiceStarter";
 
-    private static final String EXTRA_BINDER = "moe.shizuku.privileged.api.intent.extra.BINDER";
+    private static final String EXTRA_BINDER = BuildConfig.EXTRA_BINDER;//"moe.shizuku.privileged.api.intent.extra.BINDER";
 
     public static final String DEBUG_ARGS;
 
@@ -92,7 +93,7 @@ public class ServiceStarter {
     }
 
     private static boolean sendBinder(IBinder binder, String token, boolean retry) {
-        String packageName = "moe.shizuku.privileged.api";
+        String packageName = "nll.shizuku.privileged.api";
         String name = packageName + ".shizuku";
         int userId = 0;
         IContentProvider provider = null;
