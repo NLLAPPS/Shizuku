@@ -7,8 +7,6 @@ This is a **FORK** of [thedjchi/Shizuku](https://github.com/thedjchi/Shizuku) by
 [https://acr.app](https://acr.app).
 
 
-## 🤝 Contritbuting
-
 ### Building the App
 
 - Clone with `git clone --recurse-submodules`
