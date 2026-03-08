@@ -7,15 +7,6 @@ pluginManagement {
             url = "https://plugins.gradle.org/m2/"
         }
     }
-    plugins {
-        id "com.android.application" version "9.1.0"
-        id "com.android.library" version "9.1.0"
-        id "org.jetbrains.kotlin.android" version "2.3.10"
-        id "dev.rikka.tools.autoresconfig" version "1.2.2"
-        id "dev.rikka.tools.materialthemebuilder" version "1.5.1"
-        id "dev.rikka.tools.refine" version "4.4.0"
-    }
-
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)

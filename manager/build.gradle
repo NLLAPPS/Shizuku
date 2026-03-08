@@ -1,11 +1,13 @@
 import com.android.build.gradle.internal.tasks.CompileArtProfileTask
 
+
 plugins {
-    id "com.android.application"
-    id "org.jetbrains.kotlin.android"
-    id "dev.rikka.tools.refine"
-    id "dev.rikka.tools.autoresconfig"
-    id "dev.rikka.tools.materialthemebuilder"
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.rikka.refine)
+    alias(libs.plugins.rikka.autoresconfig)
+    alias(libs.plugins.rikka.materialtheme)
+
 }
 
 android {
