@@ -11,7 +11,6 @@
     android:gravity="center_vertical"
     android:minHeight="56dp"
     android:orientation="horizontal"
-    app:fitsSystemWindowsInsets="start|end"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
@@ -42,7 +41,6 @@
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceBodyMedium"
             android:layout_marginTop="2sp"
-            android:textColor="?textColorOnSurfaceHighEmphasis"
             android:textSize="14sp"
             tools:text="moe.shizuku.manager" />
 

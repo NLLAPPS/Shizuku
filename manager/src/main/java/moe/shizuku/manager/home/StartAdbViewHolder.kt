@@ -7,16 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import moe.shizuku.manager.Helps
+import moe.shizuku.manager.HelpURLs
 import moe.shizuku.manager.R
 import moe.shizuku.manager.databinding.HomeItemContainerBinding
 import moe.shizuku.manager.databinding.HomeStartAdbBinding
 import moe.shizuku.manager.ktx.toHtml
 import moe.shizuku.manager.starter.Starter
-import rikka.core.util.ClipboardUtils
-import rikka.html.text.HtmlCompat
+import moe.shizuku.manager.utils.ClipboardUtils
+
 import rikka.recyclerview.BaseViewHolder
-import rikka.recyclerview.BaseViewHolder.Creator
 
 class StartAdbViewHolder(binding: HomeStartAdbBinding, root: View) : BaseViewHolder<Any?>(root) {
 
@@ -34,12 +33,7 @@ class StartAdbViewHolder(binding: HomeStartAdbBinding, root: View) : BaseViewHol
             MaterialAlertDialogBuilder(context)
                 .setTitle(R.string.home_adb_button_view_command)
                 .setMessage(
-                    HtmlCompat.fromHtml(
-                        context.getString(
-                            R.string.home_adb_dialog_view_command_message,
-                            Starter.adbCommand
-                        )
-                    )
+                    context.getString(R.string.home_adb_dialog_view_command_message, Starter.adbCommand).toHtml()
                 )
                 .setPositiveButton(R.string.home_adb_dialog_view_command_copy_button) { _, _ ->
                     if (ClipboardUtils.put(context, Starter.adbCommand)) {
@@ -64,7 +58,7 @@ class StartAdbViewHolder(binding: HomeStartAdbBinding, root: View) : BaseViewHol
                 .show()
         }
         binding.text1.movementMethod = LinkMovementMethod.getInstance()
-        binding.text1.text = context.getString(R.string.home_adb_description, Helps.ADB.get())
-            .toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
+        binding.text1.text = context.getString(R.string.home_adb_description, HelpURLs.ADB)
+            .toHtml()
     }
 }

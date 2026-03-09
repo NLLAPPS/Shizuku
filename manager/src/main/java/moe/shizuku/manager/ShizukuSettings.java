@@ -29,7 +29,6 @@ public class ShizukuSettings {
         public static final String KEY_TCP_MODE = "tcp_mode";
         public static final String KEY_TCP_PORT = "tcp_port";
         public static final String KEY_AUTO_DISABLE_USB_DEBUGGING = "auto_disable_usb_debugging";
-        public static final String KEY_LANGUAGE = "language";
         public static final String KEY_TRANSLATION = "translation";
         public static final String KEY_TRANSLATION_CONTRIBUTORS = "translation_contributors";
         public static final String KEY_LIGHT_THEME = "light_theme";
@@ -190,11 +189,4 @@ public class ShizukuSettings {
         return getPreferences().getInt(Keys.KEY_NIGHT_MODE, defValue);
     }
 
-    public static Locale getLocale() {
-        String tag = getPreferences().getString(Keys.KEY_LANGUAGE, null);
-        if (TextUtils.isEmpty(tag) || "SYSTEM".equals(tag)) {
-            return Locale.getDefault();
-        }
-        return Locale.forLanguageTag(tag);
-    }
 }

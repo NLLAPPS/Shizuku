@@ -4,14 +4,13 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.os.Build;
 import android.util.TypedValue;
-import android.view.View;
 import androidx.annotation.StyleRes;
-import androidx.core.graphics.ColorUtils;
 import com.google.android.material.snackbar.Snackbar;
 import moe.shizuku.manager.R;
 import moe.shizuku.manager.ShizukuSettings;
 import moe.shizuku.manager.utils.EnvironmentUtils;
-import rikka.core.util.ResourceUtils;
+import moe.shizuku.manager.utils.ResourceUtils;
+
 
 public class ThemeHelper {
 
@@ -35,16 +34,7 @@ public class ThemeHelper {
         return ShizukuSettings.getPreferences().getString(ShizukuSettings.Keys.KEY_LIGHT_THEME, THEME_DEFAULT);
     }
 
-    @StyleRes
-    public static int getThemeStyleRes(Context context) {
-        switch (getTheme(context)) {
-            case THEME_BLACK:
-                return R.style.ThemeOverlay_Black;
-            case THEME_DEFAULT:
-            default:
-                return R.style.ThemeOverlay;
-        }
-    }
+
 
     public static void applySnackbarTheme(Context context, Snackbar snackbar) {
         snackbar.setBackgroundTint(resolveColor(context, R.attr.colorPrimaryContainer))

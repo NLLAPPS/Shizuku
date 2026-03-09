@@ -42,14 +42,11 @@
         android:key="category_language"
         android:title="@string/settings_language">
 
-        <rikka.preference.SimpleMenuPreference
-            android:defaultValue="SYSTEM"
+        <Preference
             android:key="language"
-            android:summary="%s"
             android:title="@string/settings_language" />
 
         <Preference
-            style="?preferenceInformationStyle"
             android:key="translation_contributors"
             android:title="@string/settings_translation_contributors" />
 

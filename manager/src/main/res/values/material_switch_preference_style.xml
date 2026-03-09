@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="SwitchPreferenceCompat.Material3" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/material_switch_preference</item>
+    </style>
+
+</resources>

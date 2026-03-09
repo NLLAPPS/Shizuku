@@ -1,18 +1,18 @@
 package moe.shizuku.manager.app
 
-import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.annotation.LayoutRes
-import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.AppBarLayout
 import moe.shizuku.manager.R
-import rikka.core.ktx.unsafeLazy
+import moe.shizuku.manager.ktx.unsafeLazy
 
 abstract class AppBarActivity : AppActivity() {
 
@@ -29,9 +29,14 @@ abstract class AppBarActivity : AppActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setupEdgeToEdge()
         super.onCreate(savedInstanceState)
         super.setContentView(getLayoutId())
-
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->
+            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(bars.left, bars.top, bars.right, bars.bottom)
+            insets
+        }
         setSupportActionBar(toolbar)
     }
 
@@ -53,6 +58,14 @@ abstract class AppBarActivity : AppActivity() {
         rootView.addView(view, 0, params)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressedDispatcher.onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }
 
 abstract class AppBarFragmentActivity : AppBarActivity() {
@@ -66,11 +79,12 @@ abstract class AppBarFragmentActivity : AppBarActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .add(R.id.fragment_container, createFragment())
                 .commit()
         }
     }
-    
+
 }

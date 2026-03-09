@@ -9,7 +9,7 @@ import moe.shizuku.manager.MainActivity
 import moe.shizuku.manager.R
 import moe.shizuku.manager.app.AppActivity
 import moe.shizuku.manager.ktx.toHtml
-import rikka.html.text.HtmlCompat
+
 
 class LegacyIsNotSupportedActivity : AppActivity() {
 
@@ -53,7 +53,7 @@ class LegacyIsNotSupportedActivity : AppActivity() {
         if (v3Support) {
             MaterialAlertDialogBuilder(this)
                     .setTitle(getString(R.string.dialog_requesting_legacy_title, label))
-                    .setMessage(getString(R.string.dialog_requesting_legacy_message, label).toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE))
+                    .setMessage(getString(R.string.dialog_requesting_legacy_message, label).toHtml())
                     .setPositiveButton(android.R.string.ok, null)
                     .setNeutralButton(R.string.dialog_requesting_legacy_button_open_shizuku) { _, _ ->
                         startActivity(Intent(this, MainActivity::class.java)
@@ -68,7 +68,7 @@ class LegacyIsNotSupportedActivity : AppActivity() {
         } else {
             MaterialAlertDialogBuilder(this)
                     .setTitle(getString(R.string.dialog_legacy_not_support_title, label))
-                    .setMessage(getString(R.string.dialog_legacy_not_support_message, label).toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE))
+                    .setMessage(getString(R.string.dialog_legacy_not_support_message, label).toHtml())
                     .setPositiveButton(android.R.string.ok, null)
                     .setOnDismissListener {
                         setResult(RESULT_ERROR)

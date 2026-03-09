@@ -8,11 +8,10 @@ import androidx.core.content.ContextCompat
 import moe.shizuku.manager.R
 import moe.shizuku.manager.databinding.HomeItemContainerBinding
 import moe.shizuku.manager.databinding.HomeServerStatusBinding
+import moe.shizuku.manager.ktx.toHtml
 import moe.shizuku.manager.model.ServiceStatus
-import rikka.html.text.HtmlCompat
-import rikka.html.text.toHtml
+
 import rikka.recyclerview.BaseViewHolder
-import rikka.recyclerview.BaseViewHolder.Creator
 import rikka.shizuku.Shizuku
 import rikka.shizuku.ShizukuApiConstants
 
@@ -62,8 +61,8 @@ class ServerStatusViewHolder(private val binding: HomeServerStatusBinding, root:
         } else {
             ""
         }
-        textView.text = title.toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
-        summaryView.text = summary.toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
+        textView.text = title.toHtml()
+        summaryView.text = summary.toHtml()
         if (TextUtils.isEmpty(summaryView.text)) {
             summaryView.visibility = View.GONE
         } else {

@@ -14,34 +14,30 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
-import androidx.work.WorkManager
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import moe.shizuku.manager.Helps
-import moe.shizuku.manager.ShizukuSettings
+import kotlinx.coroutines.launch
+import moe.shizuku.manager.HelpURLs
 import moe.shizuku.manager.R
+import moe.shizuku.manager.ShizukuSettings
 import moe.shizuku.manager.adb.AdbPairingTutorialActivity
 import moe.shizuku.manager.adb.AdbStarter
 import moe.shizuku.manager.databinding.HomeItemContainerBinding
 import moe.shizuku.manager.databinding.HomeStartWirelessAdbBinding
-import moe.shizuku.manager.home.showAccessibilityDialog
+import moe.shizuku.manager.ktx.asActivity
 import moe.shizuku.manager.ktx.toHtml
 import moe.shizuku.manager.receiver.NotifCancelReceiver
 import moe.shizuku.manager.starter.StarterActivity
 import moe.shizuku.manager.utils.CustomTabsHelper
 import moe.shizuku.manager.utils.EnvironmentUtils
 import moe.shizuku.manager.utils.ShizukuStateMachine
-import rikka.core.content.asActivity
-import rikka.html.text.HtmlCompat
+
 import rikka.recyclerview.BaseViewHolder
-import rikka.recyclerview.BaseViewHolder.Creator
 
 class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: View, private val scope: CoroutineScope) :
     BaseViewHolder<Any?>(root) {
 
     companion object {
-        fun creator (scope: CoroutineScope): Creator<Any> {
+        fun creator(scope: CoroutineScope): Creator<Any> {
             return Creator { inflater: LayoutInflater, parent: ViewGroup? ->
                 val outer = HomeItemContainerBinding.inflate(inflater, parent, false)
                 val inner = HomeStartWirelessAdbBinding.inflate(inflater, outer.root, true)
@@ -49,7 +45,7 @@ class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: Vie
             }
         }
 
-        fun start (context: Context, scope: CoroutineScope) {
+        fun start(context: Context, scope: CoroutineScope) {
             if (ShizukuStateMachine.get() == ShizukuStateMachine.State.STARTING) {
                 Toast.makeText(context, context.getString(R.string.toast_shizuku_already_starting), Toast.LENGTH_SHORT).show()
                 return
@@ -62,7 +58,7 @@ class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: Vie
                 Settings.Global.putInt(cr, Settings.Global.ADB_ENABLED, 1)
                 Settings.Global.putLong(cr, "adb_allowed_connection_time", 0L)
             }
-        
+
             val adbEnabled = Settings.Global.getInt(cr, Settings.Global.ADB_ENABLED, 0)
             if (adbEnabled == 0) {
                 WadbEnableUsbDebuggingDialogFragment().show(context.asActivity<FragmentActivity>().supportFragmentManager)
@@ -75,16 +71,16 @@ class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: Vie
             // If ADB is NOT listening to a TCP port and the device doesn't support TLS, inform the user
             if (tcpPort <= 0 && !EnvironmentUtils.isTlsSupported()) {
                 WadbNotEnabledDialogFragment().show(context.asActivity<FragmentActivity>().supportFragmentManager)
-            // If ADB IS NOT listening to a TCP port but the device supports TLS, start mDns discovery
+                // If ADB IS NOT listening to a TCP port but the device supports TLS, start mDns discovery
             } else if (tcpPort <= 0) {
                 AdbDialogFragment().show(context.asActivity<FragmentActivity>().supportFragmentManager)
-            // If ADB IS listening to a TCP port but the user wants to close it and use TLS instead, close the TCP port and start mDns discovery
+                // If ADB IS listening to a TCP port but the user wants to close it and use TLS instead, close the TCP port and start mDns discovery
             } else if (!tcpMode) {
                 scope.launch {
                     AdbStarter.stopTcp(context, tcpPort)
                 }
                 AdbDialogFragment().show(context.asActivity<FragmentActivity>().supportFragmentManager)
-            // Otherwise ADB IS listening to a TCP port and the user wants to keep it open. Start Shizuku via TCP
+                // Otherwise ADB IS listening to a TCP port and the user wants to keep it open. Start Shizuku via TCP
             } else {
                 val intent = Intent(context, StarterActivity::class.java).apply {
                     putExtra(StarterActivity.EXTRA_PORT, tcpPort)
@@ -101,17 +97,17 @@ class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: Vie
 
         if (EnvironmentUtils.isTlsSupported()) {
             binding.button3.setOnClickListener { v: View ->
-                CustomTabsHelper.launchUrlOrCopy(v.context, Helps.ADB_ANDROID11.get())
+                CustomTabsHelper.launchUrlOrCopy(v.context, HelpURLs.ADB_ANDROID11)
             }
             binding.button2.setOnClickListener { v: View ->
                 onPairClicked(v.context)
             }
             binding.text1.movementMethod = LinkMovementMethod.getInstance()
             binding.text1.text = context.getString(R.string.home_wireless_adb_description)
-                .toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
+                .toHtml()
         } else {
             binding.text1.text = context.getString(R.string.home_wireless_adb_description_pre_11)
-                .toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
+                .toHtml()
             binding.button2.isVisible = false
             binding.button3.isVisible = false
         }

@@ -17,7 +17,7 @@ import moe.shizuku.manager.MainActivity
 import moe.shizuku.manager.R
 import moe.shizuku.manager.ShizukuSettings
 import moe.shizuku.manager.home.HomeActivity
-import rikka.core.ktx.unsafeLazy
+import moe.shizuku.manager.ktx.unsafeLazy
 import java.net.ConnectException
 
 @TargetApi(Build.VERSION_CODES.R)

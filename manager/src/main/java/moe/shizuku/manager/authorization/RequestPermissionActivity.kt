@@ -12,15 +12,15 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeout
 import kotlinx.coroutines.TimeoutCancellationException
-import moe.shizuku.manager.Helps
+import moe.shizuku.manager.HelpURLs
 import moe.shizuku.manager.R
 import moe.shizuku.manager.app.AppActivity
 import moe.shizuku.manager.databinding.ConfirmationDialogBinding
 import moe.shizuku.manager.ktx.toHtml
 import moe.shizuku.manager.utils.Logger.LOGGER
 import moe.shizuku.manager.utils.ShizukuStateMachine
-import rikka.core.res.resolveColor
-import rikka.html.text.HtmlCompat
+import moe.shizuku.manager.ktx.resolveColor
+
 import rikka.shizuku.Shizuku
 import rikka.shizuku.ShizukuApiConstants.REQUEST_PERMISSION_REPLY_ALLOWED
 import rikka.shizuku.ShizukuApiConstants.REQUEST_PERMISSION_REPLY_IS_ONETIME
@@ -50,7 +50,7 @@ class RequestPermissionActivity : AppActivity() {
         val dialog = MaterialAlertDialogBuilder(this)
                 .setIcon(icon)
                 .setTitle("Shizuku: ${getString(R.string.app_management_dialog_adb_is_limited_title)}")
-                .setMessage(getString(R.string.app_management_dialog_adb_is_limited_message, Helps.ADB.get()).toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE))
+                .setMessage(getString(R.string.app_management_dialog_adb_is_limited_message, HelpURLs.ADB).toHtml())
                 .setPositiveButton(android.R.string.ok, null)
                 .setOnDismissListener { finish() }
                 .create()
@@ -114,8 +114,8 @@ class RequestPermissionActivity : AppActivity() {
                 setResult(uid, pid, requestCode, allowed = false, onetime = true)
                 dialog.dismiss()
             }
-            title.text = HtmlCompat.fromHtml(getString(R.string.permission_warning_template,
-                    label, getString(R.string.permission_group_description)))
+            title.text = getString(R.string.permission_warning_template,
+                label, getString(R.string.permission_group_description)).toHtml()
         }
 
         dialog = MaterialAlertDialogBuilder(this)

@@ -17,11 +17,9 @@ import moe.shizuku.manager.databinding.HomeAutomationBinding
 import moe.shizuku.manager.databinding.HomeAutomationBottomSheetBinding
 import moe.shizuku.manager.databinding.HomeItemContainerBinding
 import moe.shizuku.manager.ktx.toHtml
+import moe.shizuku.manager.utils.ClipboardUtils
 import moe.shizuku.manager.utils.EnvironmentUtils
-import rikka.core.util.ClipboardUtils
-import rikka.html.text.HtmlCompat
 import rikka.recyclerview.BaseViewHolder
-import rikka.recyclerview.BaseViewHolder.Creator
 
 class AutomationViewHolder(
     binding: HomeAutomationBinding,
@@ -112,7 +110,7 @@ class AutomationViewHolder(
             binding.text2.apply {
                 visibility = View.VISIBLE
                 text = context.getString(R.string.home_automation_description_device_restriction, "adb tcpip 5555")
-                    .toHtml(HtmlCompat.FROM_HTML_OPTION_TRIM_WHITESPACE)
+                    .toHtml()
             }
         }
     }

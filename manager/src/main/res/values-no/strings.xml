@@ -111,10 +111,6 @@
     <string name="home_automation_description">Apper som Tasker og MacroDroid kan sende intensjoner
         om å starte/stoppe Shizuku automatisk.</string>
     <string name="home_automation_button_view_intents">Vis intensjoner</string>
-    <string name="home_automation_dialog_label_action">Handling</string>
-    <string name="home_automation_dialog_label_package">Pakke</string>
-    <string name="home_automation_dialog_label_class">Klasse</string>
-    <string name="home_automation_dialog_label_target">Mål</string>
     <!-- Home - Learn more -->
     <string name="home_learn_more_title">Utviklerveiledning</string>
     <string name="home_learn_more_description">Lær hvordan du utvikler deg med Shizuku</string>
@@ -173,8 +169,6 @@
     <string name="settings_tcp_port">TCP-port</string>
     <string name="settings_tcp_port_default">Standard (5555)</string>
     <string name="settings_tcp_port_hint">La det stå tomt for å bruke standard (5555)</string>
-    <string name="settings_tcp_learn_more">Lær mer om bruk av automatiseringsapper for å kontrollere
-        Shizuku</string>
     <string name="settings_language">Språk</string>
     <string name="settings_translation_contributors">Oversettelsesbidragsytere</string>
     <string name="settings_translation">Delta i oversettelse</string>
@@ -223,7 +217,6 @@
     <string name="about_dialog_button_close">Lukke</string>
     <string name="about_view_source_code"><![CDATA[Se kildekoden på %s]]></string>
     <!-- Start -->
-    <string name="action_start">Start Shizuku</string>
     <!-- Stop -->
     <string name="action_stop">Stopp Shizuku</string>
     <string name="dialog_stop_message">Shizuku-tjenesten vil bli stanset.</string>

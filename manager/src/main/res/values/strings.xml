@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">Shizuku</string>
 
     <!-- To translators: you can leave your here -->
-    <string name="translation_contributors" />
+    <string name="translation_contributors" >Contributors</string>
 
     <!-- Home - Status -->
     <string name="home_status_service_is_running">%1$s is running</string>
@@ -81,7 +81,7 @@
     <!-- Home - Automation -->
     <string name="home_automation_title">Control Shizuku with automation apps</string>
     <string name="home_automation_description">Apps like Tasker and MacroDroid can send intents to start/stop Shizuku automatically.</string>
-    <string name="home_automation_description_device_restriction">To use the start intent on your device, you first need to enable ADB over TCP by running %1$s from a PC.</string>
+    <string name="home_automation_description_device_restriction" translatable="false">To use the start intent on your device, you first need to enable ADB over TCP by running %1$s from a PC.</string>
     <string name="home_automation_button_view_intents">View intents</string>
     <string name="home_automation_bottom_sheet_intents">Intents</string>
     <string name="home_automation_bottom_sheet_label_action">Action</string>

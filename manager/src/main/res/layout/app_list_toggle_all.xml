@@ -10,7 +10,6 @@
     android:minHeight="56dp"
     android:clickable="true"
     android:focusable="true"
-    app:layout_fitsSystemWindowsInsets="start|end"
     app:cardBackgroundColor="?colorSurfaceContainerLow"
     app:cardCornerRadius="28dp"
     app:contentPaddingLeft="16dp"

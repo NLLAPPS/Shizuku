@@ -1,13 +1,7 @@
-import com.android.build.gradle.internal.tasks.CompileArtProfileTask
-
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.rikka.refine)
-    alias(libs.plugins.rikka.autoresconfig)
-    alias(libs.plugins.rikka.materialtheme)
-
 }
 
 android {
@@ -30,6 +24,9 @@ android {
                 "String", "EXTRA_BINDER", "\"${libs.versions.appExtraBinder.get()}\""
         )
 
+    }
+    androidResources {
+        generateLocaleConfig true
     }
     buildFeatures {
         buildConfig = true
@@ -76,41 +73,6 @@ android {
     }
 }
 
-autoResConfig {
-    generatedClassFullName = "rikka.shizuku.manager.ShizukuLocales"
-    generateRes = false
-    generatedArrayFirstItem = "SYSTEM"
-    generateLocaleConfig = true
-}
-
-materialThemeBuilder {
-    themes {
-        shizuku {
-            primaryColor = "#3F51B5"
-            lightThemeFormat = "Theme.Material3Expressive.Light.%s"
-            lightThemeParent = "Theme.Material3Expressive.Light"
-            darkThemeFormat = "Theme.Material3Expressive.Dark.%s"
-            darkThemeParent = "Theme.Material3Expressive.Dark"
-        }
-        dynamic_colors_overlay {
-            dynamicColors = true
-            lightThemeFormat = "ThemeOverlay.Material3.DynamicColors.Light.Shizuku"
-            lightThemeParent = "ThemeOverlay.Material3.DynamicColors.Light"
-            darkThemeFormat = "ThemeOverlay.Material3.DynamicColors.Dark.Shizuku"
-            darkThemeParent = "ThemeOverlay.Material3.DynamicColors.Dark"
-        }
-    }
-    generatePalette = true
-    generateTextColors = true
-}
-
-tasks.withType(CompileArtProfileTask.class).configureEach {
-    enabled = false
-}
-configurations.configureEach {
-    exclude group: "androidx.appcompat", module: "appcompat"
-    exclude group: "androidx.profileinstaller", module: "profileinstaller"
-}
 
 dependencies {
     implementation project(":server")
@@ -138,10 +100,6 @@ dependencies {
     implementation libs.compatibility
     implementation libs.recyclerview.adapter
     implementation libs.recyclerview.ktx
-    implementation libs.material.preference
-    implementation libs.html.ktx
-    implementation libs.insets
-    implementation libs.layoutinflater
     implementation libs.simplemenu.preference
     implementation libs.lifecycle.resource.livedata
     implementation libs.boringssl

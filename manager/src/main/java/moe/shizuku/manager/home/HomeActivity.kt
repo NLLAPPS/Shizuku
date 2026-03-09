@@ -27,12 +27,13 @@ import moe.shizuku.manager.settings.SettingsActivity
 import moe.shizuku.manager.utils.AppIconCache
 import moe.shizuku.manager.utils.SettingsHelper
 import moe.shizuku.manager.utils.ShizukuStateMachine
-import rikka.core.ktx.unsafeLazy
+import moe.shizuku.manager.ktx.unsafeLazy
 import rikka.lifecycle.Status
 import rikka.recyclerview.addEdgeSpacing
 import rikka.recyclerview.addItemSpacing
 import rikka.recyclerview.fixEdgeEffect
 import rikka.shizuku.Shizuku
+import kotlin.getValue
 
 abstract class HomeActivity : AppBarActivity() {
 

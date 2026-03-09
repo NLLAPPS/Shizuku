@@ -7,7 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    app:fitsSystemWindowsInsets="bottom|start|end"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -29,8 +28,8 @@
                 android:layout_marginTop="4dp"
                 android:importantForAccessibility="no"
                 android:src="@drawable/ic_help_outline_24dp"
-                android:tint="?colorOnSecondaryContainer"
-                android:tintMode="src_in" />
+                app:tint="?colorOnSecondaryContainer"
+                app:tintMode="src_in" />
 
             <TextView
                 android:id="@android:id/summary"
@@ -214,8 +213,8 @@
                 android:padding="4dp"
                 android:layout_marginStart="8dp"
                 android:src="@drawable/ic_numeric_3_circle_outline_24"
-                android:tint="?android:textColorSecondary"
-                android:tintMode="src_in" />
+                app:tint="?android:textColorSecondary"
+                app:tintMode="src_in" />
 
             <LinearLayout
                 android:layout_width="0dp"
