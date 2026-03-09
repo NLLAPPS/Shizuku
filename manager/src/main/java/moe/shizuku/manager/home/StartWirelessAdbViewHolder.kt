@@ -33,6 +33,7 @@ import moe.shizuku.manager.utils.ShizukuStateMachine
 
 import rikka.recyclerview.BaseViewHolder
 
+@RequiresApi(Build.VERSION_CODES.R)
 class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: View, private val scope: CoroutineScope) :
     BaseViewHolder<Any?>(root) {
 
@@ -44,6 +45,7 @@ class StartWirelessAdbViewHolder(binding: HomeStartWirelessAdbBinding, root: Vie
                 StartWirelessAdbViewHolder(inner, outer.root, scope)
             }
         }
+
 
         fun start(context: Context, scope: CoroutineScope) {
             if (ShizukuStateMachine.get() == ShizukuStateMachine.State.STARTING) {
