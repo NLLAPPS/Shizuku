@@ -19,6 +19,7 @@ import moe.shizuku.manager.ktx.asLink
 import moe.shizuku.manager.ktx.applyTemplateArgs
 import moe.shizuku.manager.utils.CustomTabsHelper
 import moe.shizuku.manager.worker.AdbStartWorker
+import androidx.core.net.toUri
 
 class BugReportDialog : DialogFragment() {
 
@@ -29,13 +30,13 @@ class BugReportDialog : DialogFragment() {
         binding = BugReportDialogBinding.inflate(layoutInflater)
 
         val updateLink = getString(R.string.bug_report_dialog_link_update)
-            .asLink("https://github.com/thedjchi/Shizuku/releases/latest")
+            .asLink("https://acr.app")
 
         val wikiLink = getString(R.string.bug_report_dialog_link_wiki)
-            .asLink("https://github.com/thedjchi/Shizuku/releases/wiki#troubleshooting")
+            .asLink("https://github.com/NLLAPPS/Shizuku/wiki/")
 
         val issuesLink = getString(R.string.bug_report_dialog_link_issues)
-            .asLink("https://github.com/thedjchi/Shizuku/releases/issues")
+            .asLink("https://github.com/NLLAPPS/Shizuku/issues")
 
         binding.apply {
             updateText.applyTemplateArgs(updateLink)
@@ -48,7 +49,7 @@ class BugReportDialog : DialogFragment() {
             .setTitle(R.string.settings_report_bug)
             .setView(binding.root)
             .setPositiveButton("GitHub") { _, _ ->
-                CustomTabsHelper.launchUrlOrCopy(context, "https://github.com/thedjchi/Shizuku/issues/new")
+                CustomTabsHelper.launchUrlOrCopy(context, "https://github.com/NLLAPPS/Shizuku/issues/new")
             }
             .setNegativeButton(R.string.bug_report_dialog_button_email) { _, _ ->
                 val plainBody = """
@@ -59,11 +60,9 @@ class BugReportDialog : DialogFragment() {
                     Shizuku Version: ${BuildConfig.VERSION_NAME}
                 """.trimIndent()
 
-                val intent = Intent(Intent.ACTION_SENDTO, Uri.parse(
-                    "mailto:" + context.getString(R.string.support_email) + 
-                    "?subject=" + Uri.encode("[ISSUE TITLE]") +
-                    "&body=" + Uri.encode(plainBody)
-                ))
+                val intent = Intent(Intent.ACTION_SENDTO, ("mailto:" + context.getString(R.string.support_email) +
+                        "?subject=" + Uri.encode("[ISSUE TITLE]") +
+                        "&body=" + Uri.encode(plainBody)).toUri())
                 try {
                     context.startActivity(intent)
                     dismiss()
