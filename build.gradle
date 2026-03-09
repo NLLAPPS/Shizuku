@@ -22,6 +22,11 @@ subprojects { subproject ->
                 sourceCompatibility = javaVersionEnum
                 targetCompatibility = javaVersionEnum
             }
+            externalNativeBuild {
+                cmake {
+                    buildStagingDirectory = file("${System.properties['user.home']}${File.separator}.build-cxx${File.separator}${rootProject.name}${File.separator}${project.name}")
+                }
+            }
         }
     }
 }
