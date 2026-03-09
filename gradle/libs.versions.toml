@@ -8,7 +8,7 @@ appVersionName = "13.6.0"
 appVersionCode = "13600"
 compileSdkVersion = "36"
 compileSdkMinorApiLevel = "1" # Set to 0 if none
-minSdkVersion = "24"
+minSdkVersion = "26"
 targetSdkVersion = "36"
 javaVersion = "21" # JavaVersion.VERSION_21
 
