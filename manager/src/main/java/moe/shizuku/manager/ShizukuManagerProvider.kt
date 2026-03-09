@@ -7,7 +7,6 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.TimeoutCancellationException
 import moe.shizuku.api.BinderContainer
 import moe.shizuku.manager.utils.Logger.LOGGER
@@ -20,7 +19,7 @@ import rikka.shizuku.server.ktx.workerHandler
 class ShizukuManagerProvider : ShizukuProvider() {
 
     companion object {
-        private const val EXTRA_BINDER = BuildConfig.EXTRA_BINDER //"moe.shizuku.privileged.api.intent.extra.BINDER"
+        private const val EXTRA_BINDER = BuildConfig.EXTRA_BINDER;//"moe.shizuku.privileged.api.intent.extra.BINDER"
         private const val METHOD_SEND_USER_SERVICE = "sendUserService"
     }
 

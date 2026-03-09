@@ -31,6 +31,7 @@
 #define EXIT_FATAL_KILL 9
 #define EXIT_FATAL_BINDER_BLOCKED_BY_SELINUX 10
 
+//#define PACKAGE_NAME "moe.shizuku.privileged.api"
 #if !defined(PACKAGE_NAME)
 #error "PACKAGE_NAME macro is not defined. Define it via CMake or Gradle build configuration."
 #endif

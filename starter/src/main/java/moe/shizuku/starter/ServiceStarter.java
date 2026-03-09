@@ -93,7 +93,7 @@ public class ServiceStarter {
     }
 
     private static boolean sendBinder(IBinder binder, String token, boolean retry) {
-        String packageName = "nll.shizuku.privileged.api";
+        String packageName =  BuildConfig.MANAGER_APPLICATION_ID;//"moe.shizuku.privileged.api";
         String name = packageName + ".shizuku";
         int userId = 0;
         IContentProvider provider = null;

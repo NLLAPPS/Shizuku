@@ -1,4 +1,5 @@
 [versions]
+# If thse changes, apps using :api will have to be re comipled with api from this repo
 appPackageName = "moe.shizuku.privileged.api"
 appExtraBinder ="moe.shizuku.privileged.api.intent.extra.BINDER"
 
