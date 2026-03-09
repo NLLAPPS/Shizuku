@@ -44,6 +44,7 @@ abstract class HomeActivity : AppBarActivity() {
     private val stateListener: (ShizukuStateMachine.State) -> Unit = {
         if (ShizukuStateMachine.isRunning()) {
             checkServerStatus()
+            appsModel.load()
         } else if (ShizukuStateMachine.isDead()) {
             checkServerStatus()
         }
@@ -99,7 +100,6 @@ abstract class HomeActivity : AppBarActivity() {
 
         ShizukuStateMachine.addListener(stateListener)
 
-        appsModel.load()
     }
 
 
@@ -124,6 +124,7 @@ abstract class HomeActivity : AppBarActivity() {
     override fun onResume() {
         super.onResume()
         checkServerStatus()
+        appsModel.load()
     }
 
     override fun onPause() {

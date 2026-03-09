@@ -19,7 +19,6 @@ import rikka.lifecycle.Resource
 class AppsViewModel(application: Application) : AndroidViewModel(application) {
     private val _packages = MutableLiveData<Resource<List<PackageInfo>>>()
     val packages = _packages as LiveData<Resource<List<PackageInfo>>>
-
     private val _grantedCount = MutableLiveData<Resource<Int>>()
     val grantedCount = _grantedCount as LiveData<Resource<Int>>
 
@@ -28,11 +27,15 @@ class AppsViewModel(application: Application) : AndroidViewModel(application) {
             try {
                 val list: MutableList<PackageInfo> = ArrayList()
                 var count = 0
-                for (pi in AuthorizationManager.getPackages()) {
+                AuthorizationManager.getPackages().forEach { pi ->
                     list.add(pi)
-                    if (AuthorizationManager.granted(pi.packageName, pi.applicationInfo!!.uid)) count++
+                    if (AuthorizationManager.granted(pi.packageName, pi.applicationInfo!!.uid)) {
+                        count++
+                    }
                 }
-                if (!onlyCount) _packages.postValue(Resource.success(list))
+                if (!onlyCount) {
+                    _packages.postValue(Resource.success(list))
+                }
                 _grantedCount.postValue(Resource.success(count))
             } catch (e: CancellationException) {
 
