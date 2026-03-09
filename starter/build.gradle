@@ -10,6 +10,9 @@ android {
     }
     defaultConfig {
         buildConfigField(
+                "String", "MANAGER_APPLICATION_ID", "\"${libs.versions.appPackageName.get()}\""
+        )
+        buildConfigField(
                 "String", "EXTRA_BINDER", "\"${libs.versions.appExtraBinder.get()}\""
         )
     }
