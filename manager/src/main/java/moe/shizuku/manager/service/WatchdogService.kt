@@ -8,20 +8,18 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ServiceInfo
-import android.net.Uri
 import android.os.Build
 import android.os.IBinder
-import android.provider.Settings
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import moe.shizuku.manager.R
+import androidx.core.net.toUri
 import moe.shizuku.manager.MainActivity
+import moe.shizuku.manager.R
 import moe.shizuku.manager.ShizukuSettings
 import moe.shizuku.manager.receiver.ShizukuReceiverStarter
 import moe.shizuku.manager.utils.SettingsPage
 import moe.shizuku.manager.utils.ShizukuStateMachine
 import java.util.concurrent.atomic.AtomicBoolean
-import androidx.core.net.toUri
 
 class WatchdogService : Service() {
 
@@ -68,22 +66,25 @@ class WatchdogService : Service() {
     override fun onBind(intent: Intent?): IBinder? = null
 
     private fun buildNotification(): Notification {
-        val channelId = "shizuku_watchdog"
+        val channelId = "shizuku_watchdog_v2"
         val channelName = "Watchdog"
 
         val channel = NotificationChannel(
             channelId,
             channelName,
             NotificationManager.IMPORTANCE_LOW
-        )
+        ).apply {
+            setShowBadge(false)
+        }
+
         val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         manager.createNotificationChannel(channel)
 
         val launchIntent = Intent(this, MainActivity::class.java).apply {
             addFlags(
-                Intent.FLAG_ACTIVITY_NEW_TASK or 
-                Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                Intent.FLAG_ACTIVITY_SINGLE_TOP
+                Intent.FLAG_ACTIVITY_NEW_TASK or
+                        Intent.FLAG_ACTIVITY_CLEAR_TOP or
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
             )
         }
         val launchPendingIntent = PendingIntent.getActivity(
@@ -155,7 +156,7 @@ class WatchdogService : Service() {
             try {
                 context.startForegroundService(Intent(context, WatchdogService::class.java))
             } catch (e: Exception) {
-                Log.e("ShizukuApplication", "Failed to start WatchdogService: ${e.message}" )
+                Log.e("ShizukuApplication", "Failed to start WatchdogService: ${e.message}")
             }
         }
 
