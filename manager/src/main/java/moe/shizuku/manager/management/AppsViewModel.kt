@@ -17,9 +17,6 @@ import moe.shizuku.manager.authorization.AuthorizationManager
 import rikka.lifecycle.Resource
 
 class AppsViewModel(application: Application) : AndroidViewModel(application) {
-
-    private val appContext = getApplication<Application>().applicationContext
-
     private val _packages = MutableLiveData<Resource<List<PackageInfo>>>()
     val packages = _packages as LiveData<Resource<List<PackageInfo>>>
 
