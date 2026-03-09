@@ -10,6 +10,7 @@ import android.widget.ImageView
 import androidx.collection.LruCache
 import kotlinx.coroutines.*
 import me.zhanghai.android.appiconloader.AppIconLoader
+import moe.shizuku.common.util.BuildUtils
 import moe.shizuku.manager.R
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors

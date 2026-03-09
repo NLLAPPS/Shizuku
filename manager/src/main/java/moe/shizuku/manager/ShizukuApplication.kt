@@ -5,9 +5,9 @@ import android.content.Context
 import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
 import com.topjohnwu.superuser.Shell
+import moe.shizuku.common.util.BuildUtils
 import moe.shizuku.manager.ktx.logd
 import moe.shizuku.manager.service.WatchdogService
-import moe.shizuku.manager.utils.BuildUtils
 import org.lsposed.hiddenapibypass.HiddenApiBypass
 
 

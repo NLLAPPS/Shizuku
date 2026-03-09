@@ -80,7 +80,8 @@ dependencies {
     implementation project(":starter")
     implementation project(":api")
     implementation project(":provider")
-
+    implementation project(":common")
+    
     compileOnly libs.hidden.stub
 
     implementation libs.kotlinx.coroutines.core
