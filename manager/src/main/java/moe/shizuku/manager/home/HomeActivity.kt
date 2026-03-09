@@ -4,6 +4,7 @@ import android.app.NotificationManager
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Process
 import android.text.method.LinkMovementMethod
@@ -22,18 +23,17 @@ import moe.shizuku.manager.app.SnackbarHelper
 import moe.shizuku.manager.databinding.AboutDialogBinding
 import moe.shizuku.manager.databinding.HomeActivityBinding
 import moe.shizuku.manager.ktx.toHtml
+import moe.shizuku.manager.ktx.unsafeLazy
 import moe.shizuku.manager.management.AppsViewModel
 import moe.shizuku.manager.settings.SettingsActivity
 import moe.shizuku.manager.utils.AppIconCache
 import moe.shizuku.manager.utils.SettingsHelper
 import moe.shizuku.manager.utils.ShizukuStateMachine
-import moe.shizuku.manager.ktx.unsafeLazy
 import rikka.lifecycle.Status
 import rikka.recyclerview.addEdgeSpacing
 import rikka.recyclerview.addItemSpacing
 import rikka.recyclerview.fixEdgeEffect
 import rikka.shizuku.Shizuku
-import kotlin.getValue
 
 abstract class HomeActivity : AppBarActivity() {
 
@@ -44,7 +44,6 @@ abstract class HomeActivity : AppBarActivity() {
     private val stateListener: (ShizukuStateMachine.State) -> Unit = {
         if (ShizukuStateMachine.isRunning()) {
             checkServerStatus()
-            appsModel.load()
         } else if (ShizukuStateMachine.isDead()) {
             checkServerStatus()
         }
@@ -99,7 +98,10 @@ abstract class HomeActivity : AppBarActivity() {
         recyclerView.addEdgeSpacing(top = edgeSpacingV, bottom = edgeSpacingV, left = edgeSpacingH, right = edgeSpacingH)
 
         ShizukuStateMachine.addListener(stateListener)
+
+        appsModel.load()
     }
+
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
@@ -107,11 +109,14 @@ abstract class HomeActivity : AppBarActivity() {
         val showDialog = intent.getBooleanExtra(HomeActivity.EXTRA_SHOW_PAIRING_DIALOG, false)
         if (showDialog) showAccessibilityDialog()
 
+
         val startWadb = intent.getBooleanExtra(HomeActivity.EXTRA_START_SERVICE_VIA_WADB, false)
         if (startWadb) {
             val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             nm.cancel(AdbPairingService.NOTIFICATION_ID)
-            StartWirelessAdbViewHolder.start(this, lifecycleScope)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                StartWirelessAdbViewHolder.start(this, lifecycleScope)
+            }
         }
 
     }
@@ -119,7 +124,6 @@ abstract class HomeActivity : AppBarActivity() {
     override fun onResume() {
         super.onResume()
         checkServerStatus()
-        appsModel.load()
     }
 
     override fun onPause() {
