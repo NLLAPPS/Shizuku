@@ -65,13 +65,11 @@
         systemdialogen være synlige samtidig.</string>
     <string name="adb_error_key_store">Kan ikke generere nøkkel for trådløs feilsøking.\nDette kan
         skyldes at KeyStore-mekanismen til denne enheten er ødelagt.</string>
-    <string name="adb_stopping_tcp">Lukker TCP-porten</string>
     <string name="adb_error_stop_tcp">Klarte ikke å stoppe ADB over TCP</string>
     <string name="adb_pair_required">Gå gjennom paringstrinnet først.</string>
     <string name="enable">Aktivere</string>
     <string name="development_settings">Utvikleralternativer</string>
     <string name="notification_settings">Varslingsalternativer</string>
-    <string name="adb_pairing_tutorial_title">Koble Shizuku til enheten din</string>
     <string name="adb_pairing_tutorial_content_notification">En varsling fra Shizuku vil hjelpe deg
         å fullføre paringen.</string>
     <string name="adb_pairing_tutorial_content_steps">Naviger til «Utvikleralternativer», og aktiver
@@ -221,11 +219,6 @@
     <string name="action_stop">Stopp Shizuku</string>
     <string name="dialog_stop_message">Shizuku-tjenesten vil bli stanset.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Startstatus for tjeneste</string>
-    <string name="notification_service_starting">Shizuku-tjenesten starter…</string>
-    <string name="notification_service_start_failed">Start Shizuku-tjenesten feilet.</string>
-    <string name="notification_service_start_no_root">Mislykkedes i å be om root-tillatelse.</string>
-    <string name="notification_working">Arbeider…</string>
     <string name="notification_channel_adb_pairing">Trådløs feilsøkingsparing</string>
     <string name="notification_adb_pairing_input_paring_code">Skriv inn paringskoden</string>
     <string name="notification_adb_pairing_searching_for_service_title">Søker etter paringstjeneste</string>
@@ -255,7 +248,6 @@
     <string name="wadb_permission_error_notification_title">Tillatelsesfeil</string>
     <string name="wadb_permission_error_notification_content">Shizuku trenger WRITE_SECURE_SETTINGS
         for å starte på oppstart. Trykk for å lære hvordan du gir det.</string>
-    <string name="wadb_notification_channel">ADB auto-start tjeneste</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Vakthunden er i gang</string>
     <string name="watchdog_turn_off">Slå av</string>

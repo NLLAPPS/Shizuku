@@ -73,13 +73,11 @@
     <string name="adb_error_key_store">Δεν είναι δυνατή η δημιουργία κλειδιού για τον ασύρματο
         εντοπισμό σφαλμάτων.\nΑυτό μπορεί να οφείλεται στο ότι ο μηχανισμός KeyStore αυτής της
         συσκευής είναι κατεστραμμένος.</string>
-    <string name="adb_stopping_tcp">Κλείσιμο θύρας TCP</string>
     <string name="adb_error_stop_tcp">Απέτυχε η διακοπή του ADB μέσω TCP</string>
     <string name="adb_pair_required">Παρακαλούμε ακολουθήστε πρώτα το βήμα σύζευξης.</string>
     <string name="enable">Ενεργοποιώ</string>
     <string name="development_settings">Επιλογές προγραμματιστή</string>
     <string name="notification_settings">Επιλογές ειδοποιήσεων</string>
-    <string name="adb_pairing_tutorial_title">Συνδέστε το Shizuku με τη συσκευή σας</string>
     <string name="adb_pairing_tutorial_content_notification">Μια ειδοποίηση από το Shizuku θα σας
         βοηθήσει να ολοκληρώσετε τη σύζευξη.</string>
     <string name="adb_pairing_tutorial_content_steps">Μεταβείτε στις \"Επιλογές προγραμματιστή\"
@@ -240,11 +238,6 @@
     <string name="action_stop">Σταματήστε το Shizuku</string>
     <string name="dialog_stop_message">Η υπηρεσία Shizuku θα διακοπεί.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Κατάσταση έναρξης υπηρεσίας</string>
-    <string name="notification_service_starting">Η υπηρεσία Shizuku ξεκινά…</string>
-    <string name="notification_service_start_failed">Η έναρξη της υπηρεσίας Shizuku απέτυχε.</string>
-    <string name="notification_service_start_no_root">Αποτυχία αιτήματος δικαιωμάτων root.</string>
-    <string name="notification_working">Εργασία…</string>
     <string name="notification_channel_adb_pairing">Ασύρματη αντιστοίχιση εντοπισμού σφαλμάτων</string>
     <string name="notification_adb_pairing_input_paring_code">Εισαγάγετε τον κωδικό σύζευξης</string>
     <string name="notification_adb_pairing_searching_for_service_title">Αναζήτηση υπηρεσίας σύζευξης</string>
@@ -276,7 +269,6 @@
     <string name="wadb_permission_error_notification_content">Ο Shizuku χρειάζεται
         WRITE_SECURE_SETTINGS για να ξεκινήσει από την εκκίνηση. Αγγίξτε το για να μάθετε πώς
         μπορείτε να το εκχωρήσετε.</string>
-    <string name="wadb_notification_channel">Υπηρεσία αυτόματης εκκίνησης ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Το Watchdog τρέχει</string>
     <string name="watchdog_turn_off">Κλείνω</string>

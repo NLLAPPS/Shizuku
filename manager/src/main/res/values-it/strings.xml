@@ -68,13 +68,11 @@
         rendere visibile sia questa app che la finestra di dialogo di sistema contemporaneamente.</string>
     <string name="adb_error_key_store">Impossibile generare la chiave per il debug wireless.\nQuesto
         potrebbe essere dovuto al fatto che il meccanismo KeyStore di questo dispositivo è rotto.</string>
-    <string name="adb_stopping_tcp">Chiusura della porta TCP</string>
     <string name="adb_error_stop_tcp">Impossibile arrestare ADB su TCP</string>
     <string name="adb_pair_required">Esegui prima la fase di accoppiamento.</string>
     <string name="enable">Abilitare</string>
     <string name="development_settings">Modalitá sviluppatore</string>
     <string name="notification_settings">Opzioni di notifica</string>
-    <string name="adb_pairing_tutorial_title">Accoppia Shizuku col tuo dispositivo</string>
     <string name="adb_pairing_tutorial_content_notification">Una notifica da Shizuku ti aiuterà a
         completare l\'accoppiamento.</string>
     <string name="adb_pairing_tutorial_content_steps">Vai su \"Opzioni sviluppatore\", quindi
@@ -231,11 +229,6 @@
     <string name="action_stop">Interrompi Shizuku</string>
     <string name="dialog_stop_message">Il servizio Shizuku verrà interrotto.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Stato di avvio del servizio</string>
-    <string name="notification_service_starting">Il servizio Shizuku si sta avviando…</string>
-    <string name="notification_service_start_failed">Avvio del servizio Shizuku non riuscito.</string>
-    <string name="notification_service_start_no_root">Impossibile richiedere i permessi di root.</string>
-    <string name="notification_working">Esecuzione…</string>
     <string name="notification_channel_adb_pairing">Accoppiamento debug wireless</string>
     <string name="notification_adb_pairing_input_paring_code">Inserire codice di associazione</string>
     <string name="notification_adb_pairing_searching_for_service_title">Ricerca del servizio di
@@ -267,7 +260,6 @@
     <string name="wadb_permission_error_notification_title">Errore di autorizzazione</string>
     <string name="wadb_permission_error_notification_content">Shizuku necessita di
         WRITE_SECURE_SETTINGS per avviarsi all\'avvio. Tocca per scoprire come concederlo.</string>
-    <string name="wadb_notification_channel">Servizio di avvio automatico ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Il cane da guardia è in esecuzione</string>
     <string name="watchdog_turn_off">Spegni</string>

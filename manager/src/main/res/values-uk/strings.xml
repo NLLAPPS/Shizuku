@@ -70,13 +70,11 @@
         додаток і системний діалог видимими одночасно.</string>
     <string name="adb_error_key_store">Не вдається згенерувати ключ для бездротового
         налагодження.\nМожливо, це пов\'язано з тим, що механізм KeyStore цього пристрою зламаний.</string>
-    <string name="adb_stopping_tcp">Закриття TCP-порту</string>
     <string name="adb_error_stop_tcp">Не вдалося зупинити ADB через TCP</string>
     <string name="adb_pair_required">Будь ласка, спочатку пройдіть етап парування.</string>
     <string name="enable">Увімкнути</string>
     <string name="development_settings">Параметри розробника</string>
     <string name="notification_settings">Налаштування повідомлень</string>
-    <string name="adb_pairing_tutorial_title">Парувати Shizuku з вашим пристроєм</string>
     <string name="adb_pairing_tutorial_content_notification">Повідомлення від Shizuku допоможе вам
         закінчити парування.</string>
     <string name="adb_pairing_tutorial_content_steps">Перейдіть до розділу «Параметри розробника»,
@@ -239,11 +237,6 @@
     <string name="action_stop">Зупинити Shizuku</string>
     <string name="dialog_stop_message">Сервіс Shizuku буде зупинено.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Статус запуску серав</string>
-    <string name="notification_service_starting">Сервіс Shizuku запущено…</string>
-    <string name="notification_service_start_failed">Помилка запуску служби Shizuku.</string>
-    <string name="notification_service_start_no_root">Помилка запиту на root доступ.</string>
-    <string name="notification_working">Працює…</string>
     <string name="notification_channel_adb_pairing">Парування для налагодження по Wi-Fi</string>
     <string name="notification_adb_pairing_input_paring_code">Уведіть код парування</string>
     <string name="notification_adb_pairing_searching_for_service_title">Пошук пристрою для парування</string>
@@ -275,7 +268,6 @@
     <string name="wadb_permission_error_notification_content">Для запуску Shizuku під час
         завантаження системи потрібні налаштування WRITE_SECURE_SETTINGS. Натисніть, щоб дізнатися,
         як їх надати.</string>
-    <string name="wadb_notification_channel">Служба автоматичного запуску ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Сторожовий таймер працює</string>
     <string name="watchdog_turn_off">Вимикати</string>

@@ -66,13 +66,11 @@
         tämä sovellus ja järjestelmävalintaikkuna voivat olla näkyvissä samanaikaisesti.</string>
     <string name="adb_error_key_store">Langattoman virheenkorjauksen avaimen luominen
         epäonnistui.\nTämä voi johtua siitä, että laitteen KeyStore-mekanismi on rikki.</string>
-    <string name="adb_stopping_tcp">TCP-portin sulkeminen</string>
     <string name="adb_error_stop_tcp">ADB:n pysäyttäminen TCP:n kautta epäonnistui</string>
     <string name="adb_pair_required">Käy ensin läpi paritusvaihe.</string>
     <string name="enable">Ottaa käyttöön</string>
     <string name="development_settings">Kehittäjävaihtoehdot</string>
     <string name="notification_settings">Ilmoitusvaihtoehdot</string>
-    <string name="adb_pairing_tutorial_title">Yhdistä Shizuku laitteeseesi</string>
     <string name="adb_pairing_tutorial_content_notification">Shizukun ilmoitus auttaa sinua
         täydentämään parituksen.</string>
     <string name="adb_pairing_tutorial_content_steps">Siirry kohtaan \"Kehittäjäasetukset\" ja ota
@@ -227,11 +225,6 @@
     <string name="action_stop">Pysäyttäkää Shizuku</string>
     <string name="dialog_stop_message">Shizukun palvelu lopetetaan.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Palvelun aloitustila</string>
-    <string name="notification_service_starting">Shizukun palvelu alkaa…</string>
-    <string name="notification_service_start_failed">Käynnistä Shizuku-palvelu epäonnistui.</string>
-    <string name="notification_service_start_no_root">Root-luvan pyytäminen epäonnistui.</string>
-    <string name="notification_working">Toimiva…</string>
     <string name="notification_channel_adb_pairing">Langaton debuggausparitus</string>
     <string name="notification_adb_pairing_input_paring_code">Syötä parituskoodi</string>
     <string name="notification_adb_pairing_searching_for_service_title">Etsitään parituspalvelua</string>
@@ -261,7 +254,6 @@
     <string name="wadb_permission_error_notification_title">Lupavirhe</string>
     <string name="wadb_permission_error_notification_content">Shizukun täytyy WRITE_SECURE_SETTINGS
         käynnistyäkseen. Napauta oppiaksesi, miten se myönnetään.</string>
-    <string name="wadb_notification_channel">ADB:n automaattinen käynnistyspalvelu</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Vahtikoira on juoksemassa</string>
     <string name="watchdog_turn_off">Sammuta</string>

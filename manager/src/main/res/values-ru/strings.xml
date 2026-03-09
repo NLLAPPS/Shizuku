@@ -68,13 +68,11 @@
         одновременно видеть это приложение и системный диалог.</string>
     <string name="adb_error_key_store">Не удаётся сгенерировать ключ для беспроводной
         отладки.\nВозможно, это связано с поломанным механизмом KeyStore этого устройства.</string>
-    <string name="adb_stopping_tcp">Закрытие TCP-порта</string>
     <string name="adb_error_stop_tcp">Не удалось остановить ADB через TCP</string>
     <string name="adb_pair_required">Пожалуйста, сперва пройдите процедуру сопряжения.</string>
     <string name="enable">Давать возможность</string>
     <string name="development_settings">Параметры разработчика</string>
     <string name="notification_settings">Настройки уведомлений</string>
-    <string name="adb_pairing_tutorial_title">Сопряжение Shizuku с вашим устройством</string>
     <string name="adb_pairing_tutorial_content_notification">Уведомление от Shizuku поможет
         завершить процедуру сопряжения.</string>
     <string name="adb_pairing_tutorial_content_steps">Перейдите в «Настройки разработчика», затем
@@ -236,11 +234,6 @@
     <string name="action_stop">Остановить Shizuku</string>
     <string name="dialog_stop_message">Служба Shizuku будет остановлена.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Состояние работы службы</string>
-    <string name="notification_service_starting">Служба Shizuku запускается…</string>
-    <string name="notification_service_start_failed">Не удалось запустить службу Shizuku.</string>
-    <string name="notification_service_start_no_root">Не удалось запросить root права.</string>
-    <string name="notification_working">Работает…</string>
     <string name="notification_channel_adb_pairing">Сопряжение с отладкой по Wi-Fi</string>
     <string name="notification_adb_pairing_input_paring_code">Введите код подключения</string>
     <string name="notification_adb_pairing_searching_for_service_title">Ожидание службы сопряжения</string>
@@ -270,7 +263,6 @@
     <string name="wadb_permission_error_notification_title">Ошибка разрешения</string>
     <string name="wadb_permission_error_notification_content">Для запуска Shizuku при загрузке
         требуется разрешение WRITE_SECURE_SETTINGS. Нажмите, чтобы узнать, как его предоставить.</string>
-    <string name="wadb_notification_channel">Служба автоматического запуска ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog работает</string>
     <string name="watchdog_turn_off">Отключить</string>

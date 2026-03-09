@@ -54,13 +54,11 @@
     <string name="adb_pairing_requires_multi_window_reason">
         このシステムはペアリングダイアログが常に見えることを求めています。分割画面モードを使うことが、このアプリとシステムのダイアログを同時に表示する唯一の方法です。</string>
     <string name="adb_error_key_store">ワイヤレスデバッグ用のキーを生成できません。\nこれはこのデバイスのKeyStore機構が故障しているためかもしれません。</string>
-    <string name="adb_stopping_tcp">TCPポートを閉じる</string>
     <string name="adb_error_stop_tcp">TCP経由のADBを停止できませんでした</string>
     <string name="adb_pair_required">まずはペアリングの手順を行ってください。</string>
     <string name="enable">有効にする</string>
     <string name="development_settings">開発者向けオプション</string>
     <string name="notification_settings">通知オプション</string>
-    <string name="adb_pairing_tutorial_title">お使いのデバイスとShizukuをペアリングする</string>
     <string name="adb_pairing_tutorial_content_notification">Shizukuからの通知でペアリングが完了します。</string>
     <string name="adb_pairing_tutorial_content_steps">「開発者向けオプション」に移動し、「USB デバッグ」と「ワイヤレス
         デバッグ」を有効にします。</string>
@@ -197,11 +195,6 @@
     <string name="action_stop">Shizukuを停止する</string>
     <string name="dialog_stop_message">Shizukuのサービスを停止します。</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">サービス開始状況</string>
-    <string name="notification_service_starting">Shizukuを開始しています…</string>
-    <string name="notification_service_start_failed">Shizukuを開始することができませんでした。</string>
-    <string name="notification_service_start_no_root">root権限の要求に失敗しました。</string>
-    <string name="notification_working">実行中…</string>
     <string name="notification_channel_adb_pairing">ワイヤレスデバックペアリング</string>
     <string name="notification_adb_pairing_input_paring_code">ペアリングコードを入力</string>
     <string name="notification_adb_pairing_searching_for_service_title">ペアリングサービスを探しています</string>
@@ -230,7 +223,6 @@
     <string name="wadb_permission_error_notification_title">権限エラー</string>
     <string name="wadb_permission_error_notification_content">
         Shizukuを起動するにはWRITE_SECURE_SETTINGSが必要です。タップして許可方法をご確認ください。</string>
-    <string name="wadb_notification_channel">ADB自動起動サービス</string>
     <!-- Watchdog -->
     <string name="watchdog_running">ウォッチドッグが稼働中</string>
     <string name="watchdog_turn_off">無効にする</string>

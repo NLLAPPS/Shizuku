@@ -68,13 +68,11 @@
         deze app en het systeemvenster tegelijkertijd zichtbaar te maken.</string>
     <string name="adb_error_key_store">Kan geen sleutel genereren voor draadloos debuggen.\nDit kan
         komen doordat het KeyStore-mechanisme van dit apparaat kapot is.</string>
-    <string name="adb_stopping_tcp">TCP-poort sluiten</string>
     <string name="adb_error_stop_tcp">Niet geslaagd om ADB via TCP te stoppen</string>
     <string name="adb_pair_required">Ga eerst door de koppelingsstap.</string>
     <string name="enable">Inschakelen</string>
     <string name="development_settings">Ontwikkelaarsopties</string>
     <string name="notification_settings">Meldingsopties</string>
-    <string name="adb_pairing_tutorial_title">Koppel Shizuku met je apparaat</string>
     <string name="adb_pairing_tutorial_content_notification">Een melding van Shizuku zal je helpen
         om de koppeling te voltooien.</string>
     <string name="adb_pairing_tutorial_content_steps">Ga naar \'Ontwikkelaarsopties\' en schakel
@@ -231,12 +229,6 @@
     <string name="action_stop">Stop Shizuku</string>
     <string name="dialog_stop_message">De Shizuku-service zal stopgezet worden.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Startstatus van de service</string>
-    <string name="notification_service_starting">De Shizuku-service is aan het starten…</string>
-    <string name="notification_service_start_failed">Start Shizuku-service faalde.</string>
-    <string name="notification_service_start_no_root">Niet geslaagd om root-toestemming aan te
-        vragen.</string>
-    <string name="notification_working">Werkend…</string>
     <string name="notification_channel_adb_pairing">Draadloos debugging-koppeling</string>
     <string name="notification_adb_pairing_input_paring_code">Voer de koppelingscode in</string>
     <string name="notification_adb_pairing_searching_for_service_title">Zoeken naar koppelingsdienst</string>
@@ -266,7 +258,6 @@
     <string name="wadb_permission_error_notification_title">Toestemmingsfout</string>
     <string name="wadb_permission_error_notification_content">Shizuku heeft WRITE_SECURE_SETTINGS
         nodig om bij het opstarten te starten. Klik om te leren hoe je het kunt toestaan.</string>
-    <string name="wadb_notification_channel">ADB automatische start service</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog loopt</string>
     <string name="watchdog_turn_off">Uitschakelen</string>

@@ -56,13 +56,11 @@
         모드를 사용하는 것만이 이 앱과 시스템 대화 대화를 동시에 볼 수 있는 방법입니다.</string>
     <string name="adb_error_key_store">무선 디버깅용 키를 생성할 수 없습니다.\n이는 이 장치의 KeyStore 메커니즘이 고장 났기 때문일 수
         있습니다.</string>
-    <string name="adb_stopping_tcp">TCP 포트를 닫습니다</string>
     <string name="adb_error_stop_tcp">TCP를 통한 ADB를 중지하지 못했습니다.</string>
     <string name="adb_pair_required">페어링 단계를 먼저 진행하세요.</string>
     <string name="enable">할 수 있게 하다</string>
     <string name="development_settings">개발자 옵션</string>
     <string name="notification_settings">알림 옵션</string>
-    <string name="adb_pairing_tutorial_title">기기와 Shizuku 페어링</string>
     <string name="adb_pairing_tutorial_content_notification">Shizuku의 알림이 페어링을 완료하는 데 도움이 될 수도 있습니다.</string>
     <string name="adb_pairing_tutorial_content_steps">\"개발자 옵션\"으로 이동한 다음 \"USB 디버깅\"과 \"무선 디버깅\"을
         활성화합니다.</string>
@@ -196,11 +194,6 @@
     <string name="action_stop">Shizuku 중지</string>
     <string name="dialog_stop_message">Shizuku 서비스가 중지됩니다.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">서비스 시작 상태</string>
-    <string name="notification_service_starting">Shizuku 서비스가 시작 중입니다…</string>
-    <string name="notification_service_start_failed">Shizuku 서비스를 시작할 수 없습니다.</string>
-    <string name="notification_service_start_no_root">루트 권한을 요청하지 못했습니다.</string>
-    <string name="notification_working">진행 중…</string>
     <string name="notification_channel_adb_pairing">무선 디버깅 페어링</string>
     <string name="notification_adb_pairing_input_paring_code">페어링 코드 입력</string>
     <string name="notification_adb_pairing_searching_for_service_title">페어링 서비스 검색중</string>
@@ -229,7 +222,6 @@
     <string name="wadb_permission_error_notification_title">권한 오류</string>
     <string name="wadb_permission_error_notification_content">Shizuku를 부팅 시 시작하려면
         WRITE_SECURE_SETTINGS 권한이 필요합니다. 탭하여 권한을 부여하는 방법을 알아보세요.</string>
-    <string name="wadb_notification_channel">ADB 자동 시작 서비스</string>
     <!-- Watchdog -->
     <string name="watchdog_running">워치독이 실행 중입니다</string>
     <string name="watchdog_turn_off">끄세요</string>

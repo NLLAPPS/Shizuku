@@ -69,13 +69,11 @@
         diyalogunun aynı anda görünmesini sağlamanın tek yoludur.</string>
     <string name="adb_error_key_store">Kablosuz hata ayıklama için anahtar oluşturulamıyor.\nBunun
         nedeni, bu cihazın KeyStore mekanizmasının bozulmuş olmasından kaynaklanıyor olabilir.</string>
-    <string name="adb_stopping_tcp">TCP portu kapatılıyor</string>
     <string name="adb_error_stop_tcp">TCP üzerinden ADB durdurulamadı</string>
     <string name="adb_pair_required">Lütfen önce eşleştirme adımını uygulayın.</string>
     <string name="enable">Etkinleştir</string>
     <string name="development_settings">Geliştirici seçenekleri</string>
     <string name="notification_settings">Bildirim seçenekleri</string>
-    <string name="adb_pairing_tutorial_title">Shizuku’yu cihazınızla eşleştirin</string>
     <string name="adb_pairing_tutorial_content_notification">Shizuku’dan bir bildirim eşleştirmeyi
         tamamlamanıza yardım edecek.</string>
     <string name="adb_pairing_tutorial_content_steps">\"Geliştirici Seçenekleri\"ne gidin, ardından
@@ -231,11 +229,6 @@
     <string name="action_stop">Shizuku’yu durdur</string>
     <string name="dialog_stop_message">Shizuku hizmeti durdurulacak.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Hizmet başlangıç durumu</string>
-    <string name="notification_service_starting">Shizuku hizmeti başlıyor…</string>
-    <string name="notification_service_start_failed">Shizuku hizmeti başlatılamadı.</string>
-    <string name="notification_service_start_no_root">Kök izni sağlanamadı.</string>
-    <string name="notification_working">Çalışıyor…</string>
     <string name="notification_channel_adb_pairing">Kablosuz hata ayıklama eşleştirmesi</string>
     <string name="notification_adb_pairing_input_paring_code">Eşleştirme kodunu girin</string>
     <string name="notification_adb_pairing_searching_for_service_title">Eşleştirme hizmeti aranıyor</string>
@@ -265,7 +258,6 @@
     <string name="wadb_permission_error_notification_title">İzin Hatası</string>
     <string name="wadb_permission_error_notification_content">Shizuku\'nun önyükleme sırasında
         WRITE_SECURE_SETTINGS ayarına ihtiyacı var. Nasıl izin vereceğinizi öğrenmek için dokunun.</string>
-    <string name="wadb_notification_channel">ADB otomatik başlatma hizmeti</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Bekçi köpeği çalışıyor</string>
     <string name="watchdog_turn_off">Devre Dışı Bırak</string>

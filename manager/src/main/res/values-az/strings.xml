@@ -68,13 +68,11 @@
         eyni vaxtda görünməsinə imkan verməyin yeganə yoludur.</string>
     <string name="adb_error_key_store">Simsiz sazlama üçün açar yaratmaq mümkün deyil.\nBunun səbəbi
         bu cihazın KeyStore mexanizminin xarab olması ola bilər.</string>
-    <string name="adb_stopping_tcp">TCP portunun bağlanması</string>
     <string name="adb_error_stop_tcp">ADB-ni TCP üzərindən dayandırmaq uğursuz oldu</string>
     <string name="adb_pair_required">Lütfən, əvvəlcə cütləşmə mərhələsini keçin.</string>
     <string name="enable">Aktiv et</string>
     <string name="development_settings">Tərtibatçı seçimləri</string>
     <string name="notification_settings">Bildiriş seçimləri</string>
-    <string name="adb_pairing_tutorial_title">Shizuku-nu cihazınızla cütləşdirin</string>
     <string name="adb_pairing_tutorial_content_notification">Shizukudan gələn bildiriş cütləşdirməni
         tamamlamağınız üçün sizə kömək edə bilər</string>
     <string name="adb_pairing_tutorial_content_steps">\"Developer Options\"a keçin, sonra \"USB
@@ -231,11 +229,6 @@
     <string name="action_stop">Shizikunu dayandır</string>
     <string name="dialog_stop_message">Shizuku xidməti dayandırılacaq.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Xidmətin başlama statusu</string>
-    <string name="notification_service_starting">Shizuku servisi başladılır…</string>
-    <string name="notification_service_start_failed">Shizuku servisini başlatmaq mümkün olmadı</string>
-    <string name="notification_service_start_no_root">Root icazəsini tələb etmək alınmadı.</string>
-    <string name="notification_working">İşləyir…</string>
     <string name="notification_channel_adb_pairing">Simsiz debaq qoşulur...</string>
     <string name="notification_adb_pairing_input_paring_code">Cütləşmə kodunu daxil edin</string>
     <string name="notification_adb_pairing_searching_for_service_title">Qoşulma xidməti axtarılır</string>
@@ -267,7 +260,6 @@
     <string name="wadb_permission_error_notification_title">İcazə xətası</string>
     <string name="wadb_permission_error_notification_content">Shizuku işə başlamaq üçün
         WRITE_SECURE_SETTINGS lazımdır. Onu necə vermək lazım olduğunu öyrənmək üçün toxun.</string>
-    <string name="wadb_notification_channel">ADB avtomatik işə salma xidməti</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog qaçır</string>
     <string name="watchdog_turn_off">Söndürün</string>

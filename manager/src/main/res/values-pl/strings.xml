@@ -65,13 +65,11 @@
         systemu były widoczne jednocześnie.</string>
     <string name="adb_error_key_store">Nie mogę wygenerować klucza do bezprzewodowego
         debugowania.\nMoże to wynikać z awarii mechanizmu KeyStore tego urządzenia.</string>
-    <string name="adb_stopping_tcp">Zamykanie portu TCP</string>
     <string name="adb_error_stop_tcp">Nie udało się zatrzymać ADB przez TCP</string>
     <string name="adb_pair_required">Najpierw przeprowadź parowanie.</string>
     <string name="enable">Włącz</string>
     <string name="development_settings">Opcje programisty</string>
     <string name="notification_settings">Opcje powiadomień</string>
-    <string name="adb_pairing_tutorial_title">Sparuj Shizuku z urządzeniem</string>
     <string name="adb_pairing_tutorial_content_notification">Powiadomienie od Shizuku pomoże ci
         ukończyć parowanie.</string>
     <string name="adb_pairing_tutorial_content_steps">Przejdź do „Opcji programistycznych”, a
@@ -228,11 +226,6 @@
     <string name="action_stop">Zatrzymaj Shizuku</string>
     <string name="dialog_stop_message">Usługa Shizuku zostanie zatrzymana.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Status uruchamiania usługi</string>
-    <string name="notification_service_starting">Uruchamianie usługi Shizuku…</string>
-    <string name="notification_service_start_failed">Uruchamianie usługi Shizuku nie powiodło się.</string>
-    <string name="notification_service_start_no_root">Nie udało się uzyskać uprawnień roota.</string>
-    <string name="notification_working">Działa…</string>
     <string name="notification_channel_adb_pairing">Parowanie debugowania bezprzewodowego</string>
     <string name="notification_adb_pairing_input_paring_code">Wpisz kod parowania</string>
     <string name="notification_adb_pairing_searching_for_service_title">Szukanie usługi parowania</string>
@@ -264,7 +257,6 @@
     <string name="wadb_permission_error_notification_content">Shizuku wymaga uprawnienia
         WRITE_SECURE_SETTINGS, aby uruchamiać się przy starcie. Dotknij, aby dowiedzieć się, jak je
         nadać.</string>
-    <string name="wadb_notification_channel">Usługa autostartu ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Nadzorowanie działa</string>
     <string name="watchdog_turn_off">Wyłącz</string>

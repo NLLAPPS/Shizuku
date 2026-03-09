@@ -67,13 +67,11 @@
         această aplicație și dialogul de sistem să fie vizibile în același timp.</string>
     <string name="adb_error_key_store">Nu pot genera cheia pentru depanarea wireless.\nAcest lucru
         poate fi cauzat de faptul că mecanismul KeyStore al acestui dispozitiv este defect.</string>
-    <string name="adb_stopping_tcp">Închiderea portului TCP</string>
     <string name="adb_error_stop_tcp">Nu s-a putut opri ADB prin TCP</string>
     <string name="adb_pair_required">Parcurge mai întâi procesul de asociere.</string>
     <string name="enable">Permite</string>
     <string name="development_settings">Opțiuni dezvoltator</string>
     <string name="notification_settings">Opțiuni de notificare</string>
-    <string name="adb_pairing_tutorial_title">Asociază Shizuku cu acest dispozitiv</string>
     <string name="adb_pairing_tutorial_content_notification">O notificare de la Shizuku te va ajuta
         să finalizezi asocierea.</string>
     <string name="adb_pairing_tutorial_content_steps">Navigați la „Opțiuni pentru dezvoltatori”,
@@ -230,11 +228,6 @@
     <string name="action_stop">Oprire Shizuku</string>
     <string name="dialog_stop_message">Serviciul Shizuku va fi oprit.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Starea de pornire a serviciului</string>
-    <string name="notification_service_starting">Serviciul Shizuku pornește…</string>
-    <string name="notification_service_start_failed">Pornirea serviciului Shizuku a eșuat.</string>
-    <string name="notification_service_start_no_root">Nu s-a putut solicita permisiunea root.</string>
-    <string name="notification_working">Se lucrează…</string>
     <string name="notification_channel_adb_pairing">Asociere prin depanare fără fir</string>
     <string name="notification_adb_pairing_input_paring_code">Introdu codul de asociere</string>
     <string name="notification_adb_pairing_searching_for_service_title">Se caută serviciul de
@@ -266,7 +259,6 @@
     <string name="wadb_permission_error_notification_title">Eroare de permisiune</string>
     <string name="wadb_permission_error_notification_content">Shizuku are nevoie de
         WRITE_SECURE_SETTINGS pentru a porni la pornire. Atingeți pentru a afla cum să îl acordați.</string>
-    <string name="wadb_notification_channel">Serviciu de pornire automată ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog-ul rulează</string>
     <string name="watchdog_turn_off">Opreşte</string>

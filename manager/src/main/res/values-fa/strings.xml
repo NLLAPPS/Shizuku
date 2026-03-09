@@ -64,13 +64,11 @@
         همزمان قابل مشاهده باشند.</string>
     <string name="adb_error_key_store">امکان تولید کلید برای اشکال زدایی بی سیم وجود ندارد.\nاین
         ممکن است به این دلیل باشد که مکانیزم KeyStore این دستگاه خراب شده است.</string>
-    <string name="adb_stopping_tcp">بستن پورت TCP</string>
     <string name="adb_error_stop_tcp">متوقف کردن ADB روی TCP ناموفق بود</string>
     <string name="adb_pair_required">لطفاً ابتدا مرحله مرتبط کردن را طی کنید.</string>
     <string name="enable">فعال کردن</string>
     <string name="development_settings">گزینه های توسعه دهنده</string>
     <string name="notification_settings">گزینه های اعلان</string>
-    <string name="adb_pairing_tutorial_title">برنامه Shizuku را با دستگاه خود مرتبط کنید</string>
     <string name="adb_pairing_tutorial_content_notification">یک اعلان از Shizuku به شما امکان می دهد
         مرتبط کردن را تکمیل کنید.</string>
     <string name="adb_pairing_tutorial_content_steps">به «گزینه‌های توسعه‌دهنده» بروید، سپس
@@ -226,11 +224,6 @@
     <string name="action_stop">توقف Shizuku</string>
     <string name="dialog_stop_message">خدمات Shizuku متوقف خواهد شد.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">وضعیت شروع خدمات</string>
-    <string name="notification_service_starting">خدمات Shizuku شروع می شود…</string>
-    <string name="notification_service_start_failed">راه‌اندازی خدمات Shizuku ناموفق بود.</string>
-    <string name="notification_service_start_no_root">درخواست مجوز دسترسی ریشه (روت) انجام نشد.</string>
-    <string name="notification_working">در حال کار کردن…</string>
     <string name="notification_channel_adb_pairing">مرتبط سازی اشکال‌زدایی بی‌سیم</string>
     <string name="notification_adb_pairing_input_paring_code">وارد کردن رمز مرتبط سازی</string>
     <string name="notification_adb_pairing_searching_for_service_title">جستجوی خدمات مرتبط سازی</string>
@@ -261,7 +254,6 @@
     <string name="wadb_permission_error_notification_title">خطای مجوز</string>
     <string name="wadb_permission_error_notification_content">شیزوکو برای شروع به کار در هنگام بوت
         شدن به WRITE_SECURE_SETTINGS نیاز دارد. برای یادگیری نحوه اعطای آن، روی ضربه بزنید.</string>
-    <string name="wadb_notification_channel">سرویس شروع خودکار ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">واچ داگ در حال اجرا است</string>
     <string name="watchdog_turn_off">خاموش</string>

@@ -64,13 +64,11 @@
         النظام في آنٍ واحد.</string>
     <string name="adb_error_key_store">غير قادر على إنشاء مفتاح لتصحيح الأخطاء اللاسلكية.\nقد يكون
         هذا بسبب تعطل آلية KeyStore لهذا الجهاز.</string>
-    <string name="adb_stopping_tcp">إغلاق منفذ TCP</string>
     <string name="adb_error_stop_tcp">فشل في إيقاف ADB عبر TCP</string>
     <string name="adb_pair_required">يرجى المرور بخطوة الاقتران أولاً.</string>
     <string name="enable">يُمكَِن</string>
     <string name="development_settings">خيارات للمطور</string>
     <string name="notification_settings">إعداد الإشعارات</string>
-    <string name="adb_pairing_tutorial_title">قم بإقران Shizuku بجهازك</string>
     <string name="adb_pairing_tutorial_content_notification">سيساعدك إشعار من Shizuku على إكمال
         الاقتران.</string>
     <string name="adb_pairing_tutorial_content_steps">انتقل إلى \"خيارات المطور\"، ثم قم بتمكين
@@ -223,11 +221,6 @@
     <string name="action_stop">إيقاف Shizuku</string>
     <string name="dialog_stop_message">سيتم إيقاف خدمة Shizuku.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">بدء حالة الخدمة</string>
-    <string name="notification_service_starting">بدأت خدمة Shizuku…</string>
-    <string name="notification_service_start_failed">فشل بدء تشغيل خدمة Shizuku.</string>
-    <string name="notification_service_start_no_root">فشل في طلب إذن الجذر (الروت).</string>
-    <string name="notification_working">يعمل…</string>
     <string name="notification_channel_adb_pairing">اقتران التصحيح/العلاج اللاسلكي</string>
     <string name="notification_adb_pairing_input_paring_code">أدخل رمز الاقتران</string>
     <string name="notification_adb_pairing_searching_for_service_title">البحث عن خدمة الاقتران</string>
@@ -257,7 +250,6 @@
     <string name="wadb_permission_error_notification_title">خطأ في الإذن</string>
     <string name="wadb_permission_error_notification_content">يحتاج شيزوكو إلى WRITE_SECURE_SETTINGS
         للبدء عند بدء التشغيل. انقر لمعرفة كيفية تفعيله.</string>
-    <string name="wadb_notification_channel">خدمة بدء التشغيل التلقائي لـ ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">مراقب يعمل</string>
     <string name="watchdog_turn_off">إيقاف التشغيل</string>

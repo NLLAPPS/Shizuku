@@ -49,13 +49,11 @@
     <string name="adb_pairing_requires_multi_window_reason">
         系統需求配對對話框始終可見。只有使用分割畫面模式才能讓此應用程式和系統對話方塊同時可見。</string>
     <string name="adb_error_key_store">無法產生無線調試密鑰。\n這可能是因為此裝置的金鑰庫機制已損壞。</string>
-    <string name="adb_stopping_tcp">關閉 TCP 連接埠</string>
     <string name="adb_error_stop_tcp">未能阻止 ADB 透過 TCP 傳輸</string>
     <string name="adb_pair_required">請先進行配對步驟。</string>
     <string name="enable">啟用</string>
     <string name="development_settings">開發人員選項</string>
     <string name="notification_settings">通知設定</string>
-    <string name="adb_pairing_tutorial_title">將 Shizuku 與您的裝置配對</string>
     <string name="adb_pairing_tutorial_content_notification">一則來自 Shizuku 的通知將協助您完成配對。</string>
     <string name="adb_pairing_tutorial_content_steps">進入“開發者選項”，然後啟用“USB調試”和“無線調試”。</string>
     <string name="adb_pairing_tutorial_content_enter_pairing_code">
@@ -178,11 +176,6 @@
     <string name="action_stop">停止 Shizuku</string>
     <string name="dialog_stop_message">Shizuku 服務將被停止。</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">服務啟動狀態</string>
-    <string name="notification_service_starting">Shizuku 服務正在啟動…</string>
-    <string name="notification_service_start_failed">啟動 Shizuku 服務時失敗。</string>
-    <string name="notification_service_start_no_root">無法要求 Root 權限。</string>
-    <string name="notification_working">正在處理…</string>
     <string name="notification_channel_adb_pairing">無線偵錯配對</string>
     <string name="notification_adb_pairing_input_paring_code">輸入配對碼</string>
     <string name="notification_adb_pairing_searching_for_service_title">正在尋找配對服務</string>
@@ -211,7 +204,6 @@
     <string name="wadb_permission_error_notification_title">權限錯誤</string>
     <string name="wadb_permission_error_notification_content">Shizuku
         需要WRITE_SECURE_SETTINGS才能於開機時啟動。點擊了解如何授予此權限。</string>
-    <string name="wadb_notification_channel">ADB 自動啟動服務</string>
     <!-- Watchdog -->
     <string name="watchdog_running">看門狗正在執行</string>
     <string name="watchdog_turn_off">關閉</string>

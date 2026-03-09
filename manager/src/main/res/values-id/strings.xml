@@ -69,13 +69,11 @@
         dan dialog sistem terlihat secara bersamaan.</string>
     <string name="adb_error_key_store">Tidak dapat membuat kunci untuk debugging nirkabel.\nIni
         mungkin karena mekanisme KeyStore perangkat ini rusak.</string>
-    <string name="adb_stopping_tcp">Menutup port TCP</string>
     <string name="adb_error_stop_tcp">Gagal menghentikan ADB melalui TCP</string>
     <string name="adb_pair_required">Harap lakukan penyambungan terlebih dahulu.</string>
     <string name="enable">Memungkinkan</string>
     <string name="development_settings">Pilihan pengembang</string>
     <string name="notification_settings">Pengaturan notifikasi</string>
-    <string name="adb_pairing_tutorial_title">Pasangkan Shizuku dengan perangkat Anda</string>
     <string name="adb_pairing_tutorial_content_notification">Notifikasi dari Shizuku akan membantu
         Anda untuk menyelesaikan pemasangan.</string>
     <string name="adb_pairing_tutorial_content_steps">Arahkan ke \"Opsi Pengembang\", lalu aktifkan
@@ -230,11 +228,6 @@
     <string name="action_stop">Hentikan Shizuku</string>
     <string name="dialog_stop_message">Layanan Shizuku akan berhenti.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Status layanan</string>
-    <string name="notification_service_starting">Memulai layanan Shizuku…</string>
-    <string name="notification_service_start_failed">Layanan Shizuku gagal dimulai.</string>
-    <string name="notification_service_start_no_root">Gagal mendapat izin root.</string>
-    <string name="notification_working">Sedang bekerja…</string>
     <string name="notification_channel_adb_pairing">Pemasangan debug nirkabel</string>
     <string name="notification_adb_pairing_input_paring_code">Masukkan kode penyambungan</string>
     <string name="notification_adb_pairing_searching_for_service_title">Mencari layanan penyambungan</string>
@@ -265,7 +258,6 @@
     <string name="wadb_permission_error_notification_title">Kesalahan Izin</string>
     <string name="wadb_permission_error_notification_content">Shizuku membutuhkan
         WRITE_SECURE_SETTINGS untuk memulai saat boot. Ketuk untuk mempelajari cara memberikannya.</string>
-    <string name="wadb_notification_channel">Layanan mulai otomatis ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog sedang berjalan</string>
     <string name="watchdog_turn_off">Mematikan</string>

@@ -3,5 +3,4 @@
     <string name="support_email" translatable="false">cb@nllapps.com</string>
     <string name="translation_url" translatable="false">https://crowdin.com/project/shizuku</string>
     <string name="help_url" translatable="false">https://github.com/NLLAPPS/Shizuku/wiki</string>
-    <string name="automation_apps_url" translatable="false">https://github.com/NLLAPPS/Shizuku/wiki/Features#intents</string>
 </resources>

@@ -69,13 +69,11 @@
         simultanément cette application et la boîte de dialogue système.</string>
     <string name="adb_error_key_store">Impossible de générer une clé pour le débogage sans
         fil.\nCela peut être dû à une défaillance du mécanisme KeyStore sur cet appareil.</string>
-    <string name="adb_stopping_tcp">Fermeture du port TCP</string>
     <string name="adb_error_stop_tcp">Une erreur est survenue lors de l\'arrêt d\'\ADB via TCP</string>
     <string name="adb_pair_required">Veuillez suivre les étapes d\'association d\'abord.</string>
     <string name="enable">Activer</string>
     <string name="development_settings">Options pour les développeurs</string>
     <string name="notification_settings">Options des notifications</string>
-    <string name="adb_pairing_tutorial_title">Associer Shizuku avec votre appareil</string>
     <string name="adb_pairing_tutorial_content_notification">Une notification de Shizuku vous aidera
         à compléter l\'association.</string>
     <string name="adb_pairing_tutorial_content_steps">Accédez à « Options pour les développeurs »,
@@ -237,11 +235,6 @@
     <string name="action_stop">Arrêter Shizuku</string>
     <string name="dialog_stop_message">Le service Shizuku sera arrêté.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Statut du démarrage du service</string>
-    <string name="notification_service_starting">Le service Shizuku démarre…</string>
-    <string name="notification_service_start_failed">Le démarrage du service de Shizuku a échoué.</string>
-    <string name="notification_service_start_no_root">Impossible de demander la permission root.</string>
-    <string name="notification_working">Chargement…</string>
     <string name="notification_channel_adb_pairing">Association du débogage sans fil</string>
     <string name="notification_adb_pairing_input_paring_code">Entrer le code d\'association</string>
     <string name="notification_adb_pairing_searching_for_service_title">Recherche du service
@@ -273,7 +266,6 @@
     <string name="wadb_permission_error_notification_title">Erreur de permission</string>
     <string name="wadb_permission_error_notification_content">Shizuku a besoin de
         WRITE_SECURE_SETTINGS pour commencer le démarrage. Appuyez pour apprendre à l’accorder.</string>
-    <string name="wadb_notification_channel">Service de démarrage automatique de l’ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Le chien de garde est en fuite</string>
     <string name="watchdog_turn_off">Éteindre</string>

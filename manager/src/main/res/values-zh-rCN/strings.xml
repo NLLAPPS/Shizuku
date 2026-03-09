@@ -49,13 +49,11 @@
     <string name="adb_pairing_requires_multi_window">请先进入分屏（多窗口）模式。</string>
     <string name="adb_pairing_requires_multi_window_reason">系统要求配对对话框始终可见。只有使用分屏模式才能让此应用和系统对话框同时可见。</string>
     <string name="adb_error_key_store">无法生成无线调试密钥。\n这可能是因为此设备的密钥库机制已损坏。</string>
-    <string name="adb_stopping_tcp">关闭 TCP 端口</string>
     <string name="adb_error_stop_tcp">通过 TCP 停止 ADB 失败</string>
     <string name="adb_pair_required">请先进行配对步骤。</string>
     <string name="enable">启用</string>
     <string name="development_settings">开发者选项</string>
     <string name="notification_settings">通知设置</string>
-    <string name="adb_pairing_tutorial_title">将 Shizuku 与您的设备配对</string>
     <string name="adb_pairing_tutorial_content_notification">一条来自 Shizuku 的通知将帮助您完成配对。</string>
     <string name="adb_pairing_tutorial_content_steps">进入“开发者选项”，然后启用“USB调试”和“无线调试”。</string>
     <string name="adb_pairing_tutorial_content_enter_pairing_code">
@@ -178,11 +176,6 @@
     <string name="action_stop">停止 Shizuku</string>
     <string name="dialog_stop_message">Shizuku 服务将被停止。</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">服务启动状态</string>
-    <string name="notification_service_starting">Shizuku 服务正在启动…</string>
-    <string name="notification_service_start_failed">启动 Shizuku 服务失败。</string>
-    <string name="notification_service_start_no_root">请求 root 权限失败。</string>
-    <string name="notification_working">工作中…</string>
     <string name="notification_channel_adb_pairing">无线调试配对</string>
     <string name="notification_adb_pairing_input_paring_code">输入配对码</string>
     <string name="notification_adb_pairing_searching_for_service_title">正在搜索配对服务</string>
@@ -211,7 +204,6 @@
     <string name="wadb_permission_error_notification_title">权限错误</string>
     <string name="wadb_permission_error_notification_content">Shizuku 需要 WRITE_SECURE_SETTINGS
         权限才能开机启动。点击了解如何授予此权限。</string>
-    <string name="wadb_notification_channel">ADB 自动启动服务</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog 正在运行</string>
     <string name="watchdog_turn_off">关</string>

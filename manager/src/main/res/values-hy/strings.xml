@@ -68,13 +68,11 @@
         է, որպեսզի այս հավելվածը և համակարգի երկխոսության պատուհանը միաժամանակ տեսանելի լինեն:</string>
     <string name="adb_error_key_store">Անհնար է ստեղծել բանալի անլար վրիպազերծման համար։\nՍա կարող է
         պայմանավորված լինել այս սարքի KeyStore մեխանիզմի խափանումով։</string>
-    <string name="adb_stopping_tcp">TCP միացքի փակում</string>
     <string name="adb_error_stop_tcp">Ձախողվեց ADB-ի կանգնեցումը TCP-ի միջոցով</string>
     <string name="adb_pair_required">Խնդրում ենք սկզբում կատարել զուգելու քայլերը։</string>
     <string name="enable">Թույլատրել</string>
     <string name="development_settings">Ծրագրավորողի կարգավորումներ</string>
     <string name="notification_settings">Ծանուցման տարբերակներ</string>
-    <string name="adb_pairing_tutorial_title">Զուգակցեք Shizuku-ն ձեր սարքի հետ</string>
     <string name="adb_pairing_tutorial_content_notification">Շիզուկուից ստացված ծանուցումը կօգնի ձեզ
         ավարտել զույգավորումը։</string>
     <string name="adb_pairing_tutorial_content_steps">Անցեք «Մշակողի ընտրանքներ» բաժին, այնուհետև
@@ -233,11 +231,6 @@
     <string name="action_stop">Անջատել Shizuku-ն</string>
     <string name="dialog_stop_message">Shizuku-ի ծառայությունը կանջատվի։</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Ծառայության վիճակ</string>
-    <string name="notification_service_starting">Shizuku-ի ծառայությունը միանում է…</string>
-    <string name="notification_service_start_failed">Shizuku-ի միացումը ձախողվեց։</string>
-    <string name="notification_service_start_no_root">Չհաջողվեց ստանալ root թույլտվություն։</string>
-    <string name="notification_working">Աշխատում է…</string>
     <string name="notification_channel_adb_pairing">Անլար կարգաբերման զուգավորում</string>
     <string name="notification_adb_pairing_input_paring_code">Մուտքագրեք զուգավորման կոդը</string>
     <string name="notification_adb_pairing_searching_for_service_title">Զուգավորման ծառայության
@@ -270,7 +263,6 @@
     <string name="wadb_permission_error_notification_title">Թույլտվության սխալ</string>
     <string name="wadb_permission_error_notification_content">Shizuku-ն պետք է WRITE_SECURE_SETTINGS
         սկսել boot-ից։ Սեղմեք ՝ իմանալու համար, թե ինչպես շնորհել այն:</string>
-    <string name="wadb_notification_channel">ADB ավտոմատ մեկնարկի ծառայություն</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Հսկիչը վազում է</string>
     <string name="watchdog_turn_off">Անջատել</string>

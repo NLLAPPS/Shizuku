@@ -70,13 +70,11 @@
         app e o diálogo do sistema visíveis ao mesmo tempo.</string>
     <string name="adb_error_key_store">Não é possível gerar a chave para depuração sem fio.\nIsso
         pode ser porque o mecanismo KeyStore desse dispositivo está com defeito.</string>
-    <string name="adb_stopping_tcp">Fechando a porta TCP</string>
     <string name="adb_error_stop_tcp">Falha ao interromper o ADB sobre TCP</string>
     <string name="adb_pair_required">Execute o primeiro passo de pareamento.</string>
     <string name="enable">Habilitar</string>
     <string name="development_settings">Opções do Desenvolvedor</string>
     <string name="notification_settings">Opções de notificações</string>
-    <string name="adb_pairing_tutorial_title">Parear Shizuku com seu dispositivo</string>
     <string name="adb_pairing_tutorial_content_notification">Uma notificação do Shizuku ajudará você
         a concluir o pareamento.</string>
     <string name="adb_pairing_tutorial_content_steps">Acesse as \"Opções do desenvolvedor\" e ative
@@ -236,11 +234,6 @@
     <string name="action_stop">Parar o Shizuku</string>
     <string name="dialog_stop_message">O serviço do Shizuku será interrompido.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Status de início do serviço</string>
-    <string name="notification_service_starting">O serviço do Shizuku está iniciando…</string>
-    <string name="notification_service_start_failed">Falha ao iniciar o serviço do Shizuku.</string>
-    <string name="notification_service_start_no_root">Falha ao solicitar acesso ao root.</string>
-    <string name="notification_working">Em andamento…</string>
     <string name="notification_channel_adb_pairing">Pareamento da Depuração via Wireless</string>
     <string name="notification_adb_pairing_input_paring_code">Digite o código de pareamento</string>
     <string name="notification_adb_pairing_searching_for_service_title">Procurando serviço de
@@ -273,7 +266,6 @@
     <string name="wadb_permission_error_notification_content">Shizuku precisa da permissão
         WRITE_SECURE_SETTINGS para iniciar na inicialização do sistema. Toque para saber como
         concedê-la.</string>
-    <string name="wadb_notification_channel">Serviço de inicialização automática do ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">O cão de vigilância está em execução.</string>
     <string name="watchdog_turn_off">Desativar</string>

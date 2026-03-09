@@ -69,13 +69,11 @@
         sistemsko okno hkrati vidna.</string>
     <string name="adb_error_key_store">Ni mogoče generirati ključa za brezžično razhroščevanje.\nTo
         je morda zato, ker je mehanizem KeyStore na tej napravi pokvarjen.</string>
-    <string name="adb_stopping_tcp">Zapiranje TCP vrat</string>
     <string name="adb_error_stop_tcp">Ustavitev ADB prek TCP ni uspela</string>
     <string name="adb_pair_required">Najprej sledite koraku seznanjanja.</string>
     <string name="enable">Omogoči</string>
     <string name="development_settings">Možnosti za razvijalce</string>
     <string name="notification_settings">Možnosti obveščanja</string>
-    <string name="adb_pairing_tutorial_title">Združite Shizuku s svojo napravo</string>
     <string name="adb_pairing_tutorial_content_notification">Obvestilo Shizukuja vam bo pomagalo
         dokončati seznanjanje.</string>
     <string name="adb_pairing_tutorial_content_steps">Pojdite na »Možnosti za razvijalce« in nato
@@ -230,11 +228,6 @@
     <string name="action_stop">Ustavi Shizuku</string>
     <string name="dialog_stop_message">Storitev Shizuku bo bila ustavljena.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Status zagona storitve</string>
-    <string name="notification_service_starting">Storitev Shizuku se zaganja…</string>
-    <string name="notification_service_start_failed">Zagon storitve Shizuku ni uspel.</string>
-    <string name="notification_service_start_no_root">Neuspešna zahteva za root dovoljenje.</string>
-    <string name="notification_working">V teku…</string>
     <string name="notification_channel_adb_pairing">Seznanjanje brezžičnega razhroščevanja</string>
     <string name="notification_adb_pairing_input_paring_code">Vnesite seznantitveno kodo</string>
     <string name="notification_adb_pairing_searching_for_service_title">Iskanje storitve za
@@ -265,7 +258,6 @@
     <string name="wadb_permission_error_notification_title">Napaka pri dovoljenju</string>
     <string name="wadb_permission_error_notification_content">Shizuku potrebuje
         WRITE_SECURE_SETTINGS, da začne na začetku. Tapnite, da izveste, kako ga odobriti.</string>
-    <string name="wadb_notification_channel">ADB storitev samodejnega zagona</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog teče</string>
     <string name="watchdog_turn_off">Izklop</string>

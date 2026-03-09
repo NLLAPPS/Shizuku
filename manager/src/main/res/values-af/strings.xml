@@ -68,13 +68,11 @@
         manier om hierdie toepassing en die stelseldialoog gelyktydig sigbaar te laat wees.</string>
     <string name="adb_error_key_store">Kan nie sleutel vir draadlose ontfouting genereer nie.\nDit
         mag wees omdat die KeyStore-meganisme van hierdie toestel gebreek is.</string>
-    <string name="adb_stopping_tcp">Sluiting van TCP-poort</string>
     <string name="adb_error_stop_tcp">Kon nie ADB oor TCP stop nie</string>
     <string name="adb_pair_required">Gaan asseblief eers deur die paringsstap.</string>
     <string name="enable">Aktiveer</string>
     <string name="development_settings">Ontwikkelaaropsies</string>
     <string name="notification_settings">Kennisgewingopsies</string>
-    <string name="adb_pairing_tutorial_title">Koppel Shizuku met jou toestel</string>
     <string name="adb_pairing_tutorial_content_notification">\'n Kennisgewing van Shizuku sal jou
         help om die paring te voltooi.</string>
     <string name="adb_pairing_tutorial_content_steps">Navigeer na \"Ontwikkelaaropsies\" en aktiveer
@@ -228,11 +226,6 @@
     <string name="action_stop">Stop Shizuku</string>
     <string name="dialog_stop_message">Shizuku-diens sal gestaak word.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Diens begin status</string>
-    <string name="notification_service_starting">Shizuku-diens begin…</string>
-    <string name="notification_service_start_failed">Kon nie Shizuku-diens begin nie.</string>
-    <string name="notification_service_start_no_root">Kon nie worteltoestemming aanvra nie.</string>
-    <string name="notification_working">Werk…</string>
     <string name="notification_channel_adb_pairing">Draadlose ontfouting-paring</string>
     <string name="notification_adb_pairing_input_paring_code">Voer paringskode in</string>
     <string name="notification_adb_pairing_searching_for_service_title">Soek tans na paringsdiens</string>
@@ -263,7 +256,6 @@
     <string name="wadb_permission_error_notification_title">Toestemmingsfout</string>
     <string name="wadb_permission_error_notification_content">Shizuku benodig WRITE_SECURE_SETTINGS
         om met selflaai te begin. Tik om te leer hoe om dit toe te staan.</string>
-    <string name="wadb_notification_channel">ADB outomatiese begindiens</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Waghond loop</string>
     <string name="watchdog_turn_off">Skakel Af</string>

@@ -72,13 +72,11 @@
         legyen.</string>
     <string name="adb_error_key_store">Nem sikerült kulcsot generálni a vezeték nélküli
         hibakereséshez.\nEnnek oka lehet, hogy az eszköz KeyStore mechanizmusa hibás.</string>
-    <string name="adb_stopping_tcp">TCP port lezárása</string>
     <string name="adb_error_stop_tcp">Nem sikerült leállítani az ADB-t TCP-n keresztül.</string>
     <string name="adb_pair_required">Kérjük először végezze el a párosítási lépést.</string>
     <string name="enable">Engedélyezés</string>
     <string name="development_settings">Fejlesztői lehetőségek</string>
     <string name="notification_settings">Értesítési lehetőségek</string>
-    <string name="adb_pairing_tutorial_title">Párosítsa a Shizukut készülékével</string>
     <string name="adb_pairing_tutorial_content_notification">A Shizuku értesítése segít a párosítás
         befejezésében.</string>
     <string name="adb_pairing_tutorial_content_steps">Lépjen a „Fejlesztői beállítások” menüpontra,
@@ -237,11 +235,6 @@
     <string name="action_stop">A Shizuku leállítása</string>
     <string name="dialog_stop_message">A Shizuku szolgáltatás leáll.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Szolgáltatásindítási állapot</string>
-    <string name="notification_service_starting">A Shizuku szolgáltatás indul…</string>
-    <string name="notification_service_start_failed">A Shizuku szolgáltatás indítása nem sikerült.</string>
-    <string name="notification_service_start_no_root">Nem sikerült root engedélyt kérni.</string>
-    <string name="notification_working">Dolgozom…</string>
     <string name="notification_channel_adb_pairing">Vezeték nélküli hibakeresés pairing</string>
     <string name="notification_adb_pairing_input_paring_code">Írja be a párosítási kódot</string>
     <string name="notification_adb_pairing_searching_for_service_title">Párosítási szolgáltatás
@@ -273,7 +266,6 @@
     <string name="wadb_permission_error_notification_content">A Shizuku rendszerindításkor
         WRITE_SECURE_SETTINGS jogosultságra szorul. Koppintson ide, ha szeretné megtudni, hogyan
         engedélyezheti ezt.</string>
-    <string name="wadb_notification_channel">ADB automatikus indítási szolgáltatás</string>
     <!-- Watchdog -->
     <string name="watchdog_running">A felügyeleti szerv fut</string>
     <string name="watchdog_turn_off">Kikapcsolás</string>

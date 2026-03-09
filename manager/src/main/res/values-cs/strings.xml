@@ -43,13 +43,11 @@
     <string name="adb_pairing_requires_multi_window">Nejprve prosím přejděte do režimu rozdělené obrazovky (více oken).</string>
     <string name="adb_pairing_requires_multi_window_reason">Systém vyžaduje, aby byl dialog pro párování vždy viditelný. Použití režimu rozdělené obrazovky je jediný způsob, jak zajistit, aby tato aplikace a dialogové okno systému byly viditelné současně.</string>
     <string name="adb_error_key_store">Nelze vygenerovat klíč pro bezdrátové ladění.\nMůže to být způsobeno chybou mechanismu úložiště klíčů v tomto zařízení.</string>
-    <string name="adb_stopping_tcp">Zavírání TCP portu</string>
     <string name="adb_error_stop_tcp">Nepodařilo se zastavit ADB přes TCP</string>
     <string name="adb_pair_required">Nejprve projděte krok párování.</string>
     <string name="enable">Zapnout</string>
     <string name="development_settings">Možnosti vývojářů</string>
     <string name="notification_settings">Nastavení oznámení</string>
-    <string name="adb_pairing_tutorial_title">Spárovat Shizuku s vaším zařízením</string>
     <string name="adb_pairing_tutorial_content_notification">Notifikace od Shizuku vám pomůže dokončit párování.</string>
     <string name="adb_pairing_tutorial_content_steps">Přejděte do části „Možnosti pro vývojáře“ a poté povolte „Ladění USB“ a „Bezdrátové ladění“.</string>
     <string name="adb_pairing_tutorial_content_enter_pairing_code">Klepněte na levou stranu „Bezdrátové ladění“ a poté klepněte na „Spárovat zařízení s párovacím kódem“. Zadejte kód z oznámení pro dokončení párování.</string>
@@ -171,11 +169,6 @@
     <string name="action_stop">Zastavit Shizuku</string>
     <string name="dialog_stop_message">Služba Shizuku bude zastavena.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Stav spuštění služby</string>
-    <string name="notification_service_starting">Služba Shizuku se spouští…</string>
-    <string name="notification_service_start_failed">Spuštění služby Shizuku se nezdařilo.</string>
-    <string name="notification_service_start_no_root">Nepodařilo se požádat o oprávnění root.</string>
-    <string name="notification_working">Pracuji…</string>
     <string name="notification_channel_adb_pairing">Párování bezdrátového ladění</string>
     <string name="notification_adb_pairing_input_paring_code">Vložte párovací kód</string>
     <string name="notification_adb_pairing_searching_for_service_title">Hledání párovací služby</string>
@@ -203,7 +196,6 @@
     <string name="wadb_error_notify_dev">Klepněte pro upozornění vývojáře.</string>
     <string name="wadb_permission_error_notification_title">Chyba oprávnění</string>
     <string name="wadb_permission_error_notification_content">Shizuku potřebuje WRITE_SECURE_SETTINGS začít na startu. Klepněte a zjistěte, jak ji udělit.</string>
-    <string name="wadb_notification_channel">ADB služba automatického startu</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog běží</string>
     <string name="watchdog_turn_off">Vypnout</string>

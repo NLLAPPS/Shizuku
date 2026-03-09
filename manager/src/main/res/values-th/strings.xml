@@ -66,13 +66,11 @@
         การใช้โหมดแบ่งหน้าจอเป็นวิธีเดียวที่จะทําให้แอปนี้และกล่องโต้ตอบระบบมองเห็นได้พร้อมกัน</string>
     <string name="adb_error_key_store">ไม่สามารถสร้างคีย์สําหรับการดีบักแบบไร้สาย\nอาจเป็นเพราะกลไก
         KeyStore ของอุปกรณ์นี้เสีย</string>
-    <string name="adb_stopping_tcp">ปิดพอร์ต TCP</string>
     <string name="adb_error_stop_tcp">ไม่สามารถหยุด ADB ผ่าน TCP ได้</string>
     <string name="adb_pair_required">โปรดทำขั้นตอนการจับคู่ก่อน</string>
     <string name="enable">เปิดใช้งาน</string>
     <string name="development_settings">ตัวเลือกสำหรับนักพัฒนาแอป</string>
     <string name="notification_settings">ตัวเลือกการแจ้งเตือน</string>
-    <string name="adb_pairing_tutorial_title">จับคู่ Shizuku กับอุปกรณ์</string>
     <string name="adb_pairing_tutorial_content_notification">การแจ้งเตือนจาก Shizuku
         จะช่วยให้เสร็จสิ้นกระบวนการจับคู่</string>
     <string name="adb_pairing_tutorial_content_steps">ไปที่ \"ตัวเลือกสำหรับนักพัฒนา\"
@@ -219,11 +217,6 @@
     <string name="action_stop">หยุดทำงาน Shizuku</string>
     <string name="dialog_stop_message">บริการ Shizuku จะถูกหยุดทำงาน</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">สถานะการเริ่มบริการ</string>
-    <string name="notification_service_starting">บริการ Shizuku กำลังเริ่มต้น…</string>
-    <string name="notification_service_start_failed">ล้มเหลวในการเริ่มบริการ Shizuku</string>
-    <string name="notification_service_start_no_root">ล้มเหลวในการขอการอนุญาตรูท</string>
-    <string name="notification_working">กำลังทำงาน…</string>
     <string name="notification_channel_adb_pairing">การจับคู่การแก้ไขข้อบกพร่องผ่าน Wi-Fi</string>
     <string name="notification_adb_pairing_input_paring_code">ป้อนรหัสการจับคู่</string>
     <string name="notification_adb_pairing_searching_for_service_title">กำลังค้นหาบริการการจับคู่</string>
@@ -253,7 +246,6 @@
     <string name="wadb_permission_error_notification_title">ข้อผิดพลาดในการอนุญาต</string>
     <string name="wadb_permission_error_notification_content">ชิซูกุต้องใช้ WRITE_SECURE_SETTINGS
         เพื่อเริ่มต้นระบบเมื่อบูตเครื่อง แตะเพื่อดูวิธีให้สิทธิ์</string>
-    <string name="wadb_notification_channel">บริการเริ่มต้นอัตโนมัติของ ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">วอทช์ด็อกกำลังทำงาน</string>
     <string name="watchdog_turn_off">ปิด</string>

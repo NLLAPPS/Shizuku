@@ -68,13 +68,11 @@
         რომ ეს აპლიკაცია და სისტემის დიალოგური ფანჯარა ერთდროულად იყოს ხილული.</string>
     <string name="adb_error_key_store">უკაბელო გამართვის გასაღების გენერირება
         შეუძლებელია.\nშესაძლოა, ეს გამოწვეულია ამ მოწყობილობის KeyStore მექანიზმის გაუმართაობით.</string>
-    <string name="adb_stopping_tcp">TCP პორტის დახურვა</string>
     <string name="adb_error_stop_tcp">ADB-ის შეჩერება ვერ მოხერხდა TCP-ზე</string>
     <string name="adb_pair_required">გთხოვთ, ჯერ გაიაროთ დაწყვილების ნაბიჯი.</string>
     <string name="enable">ჩართვა</string>
     <string name="development_settings">დეველოპერის პარამეტრები</string>
     <string name="notification_settings">შეტყობინებების პარამეტრები</string>
-    <string name="adb_pairing_tutorial_title">დააწყვილეთ შიზუკუ თქვენს მოწყობილობასთან</string>
     <string name="adb_pairing_tutorial_content_notification">შიზუკუს შეტყობინება დაგეხმარებათ
         დაწყვილების დასრულებაში.</string>
     <string name="adb_pairing_tutorial_content_steps">გადადით „დეველოპერის პარამეტრებში“, შემდეგ
@@ -230,11 +228,6 @@
     <string name="action_stop">შეაჩერე შიზუკუ</string>
     <string name="dialog_stop_message">Shizuku მომსახურება შეწყდება.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">სერვისის დაწყების სტატუსი</string>
-    <string name="notification_service_starting">შიზუკუს სერვისი იწყება…</string>
-    <string name="notification_service_start_failed">Shizuku სერვისის გაშვება ვერ მოხერხდა.</string>
-    <string name="notification_service_start_no_root">root ნებართვის მოთხოვნა ვერ მოხერხდა.</string>
-    <string name="notification_working">სამუშაო…</string>
     <string name="notification_channel_adb_pairing">უსადენო გამართვის დაწყვილება</string>
     <string name="notification_adb_pairing_input_paring_code">შეიყვანეთ დაწყვილების კოდი</string>
     <string name="notification_adb_pairing_searching_for_service_title">დაწყვილების სერვისის ძიება</string>
@@ -265,7 +258,6 @@
     <string name="wadb_permission_error_notification_title">ნებართვის შეცდომა</string>
     <string name="wadb_permission_error_notification_content">შიზუკუს WRITE_SECURE_SETTINGS სჭირდება
         ჩატვირთვის დასაწყებად. შეეხეთ იმას, რომ გაიგოთ როგორ მიანიჭოთ იგი.</string>
-    <string name="wadb_notification_channel">ADB-ის ავტომატური გაშვების სერვისი</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Watchdog მუშაობს</string>
     <string name="watchdog_turn_off">გამორთვა</string>

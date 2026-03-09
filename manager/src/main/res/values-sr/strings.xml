@@ -68,13 +68,11 @@
         sistemski dijalog budu vidljivi u isto vreme.</string>
     <string name="adb_error_key_store">Nije moguće generisati ključ za bežično otklanjanje
         grešaka.\nTo može biti zato što je KeiStore mehanizam ovog uređaja je slomljena.</string>
-    <string name="adb_stopping_tcp">Затварање TCP порта</string>
     <string name="adb_error_stop_tcp">Заустављање ADB-а преко TCP-а није успело</string>
     <string name="adb_pair_required">Molim Vas, najpre prođite kroz korake za uparivanje uređaja.</string>
     <string name="enable">Омогући</string>
     <string name="development_settings">Razvojne opcije programera</string>
     <string name="notification_settings">Opcije obaveštenja</string>
-    <string name="adb_pairing_tutorial_title">Uparite Shizuku sa Vašim uređajem</string>
     <string name="adb_pairing_tutorial_content_notification">Notifikacija iz Shizuku aplikacije će
         Vam pomoći da dovršite uparivanje.</string>
     <string name="adb_pairing_tutorial_content_steps">Идите на „Опције за програмере“, затим
@@ -228,11 +226,6 @@
     <string name="action_stop">Заустави Шизуку</string>
     <string name="dialog_stop_message">Шизуку линија ће бити обустављена.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Статус покретања услуге</string>
-    <string name="notification_service_starting">Шизуку линија почиње…</string>
-    <string name="notification_service_start_failed">Покретање Шизуку услуге није успело.</string>
-    <string name="notification_service_start_no_root">Није успело захтевање root дозволе.</string>
-    <string name="notification_working">Ради…</string>
     <string name="notification_channel_adb_pairing">Бежично упаривање за отклањање грешака</string>
     <string name="notification_adb_pairing_input_paring_code">Унесите код за упаривање</string>
     <string name="notification_adb_pairing_searching_for_service_title">Тражење услуге упаривања</string>
@@ -262,7 +255,6 @@
     <string name="wadb_permission_error_notification_title">Грешка дозволе</string>
     <string name="wadb_permission_error_notification_content">Шизуку захтева WRITE_SECURE_SETTINGS
         да би се покренуо при покретању система. Додирните да бисте сазнали како да га одобрите.</string>
-    <string name="wadb_notification_channel">ADB услуга аутоматског покретања</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Чуварски орган ради</string>
     <string name="watchdog_turn_off">Ugasi</string>

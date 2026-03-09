@@ -69,13 +69,11 @@
         membolehkan apl ini dan dialog sistem kelihatan pada masa yang sama.</string>
     <string name="adb_error_key_store">Tidak dapat menjana kunci untuk penyahpepijatan
         wayarles.\nIni mungkin kerana mekanisme KeyStore peranti ini rosak.</string>
-    <string name="adb_stopping_tcp">Menutup port TCP</string>
     <string name="adb_error_stop_tcp">Gagal menghentikan ADB melalui TCP</string>
     <string name="adb_pair_required">Sila lalui langkah berpasangan terlebih dahulu.</string>
     <string name="enable">Dayakan</string>
     <string name="development_settings">Pilihan pemaju</string>
     <string name="notification_settings">Pilihan pemberitahuan</string>
-    <string name="adb_pairing_tutorial_title">Gandingkan Shizuku dengan peranti anda</string>
     <string name="adb_pairing_tutorial_content_notification">Pemberitahuan daripada Shizuku akan
         membantu anda melengkapkan gandingan.</string>
     <string name="adb_pairing_tutorial_content_steps">Navigasi ke \"Pilihan Pembangun\", kemudian
@@ -230,11 +228,6 @@
     <string name="action_stop">Hentikan Shizuku</string>
     <string name="dialog_stop_message">Perkhidmatan Shizuku akan dihentikan.</string>
     <!-- Notification -->
-    <string name="notification_channel_service_status">Status permulaan perkhidmatan</string>
-    <string name="notification_service_starting">Perkhidmatan Shizuku bermula…</string>
-    <string name="notification_service_start_failed">Mulakan perkhidmatan Shizuku gagal.</string>
-    <string name="notification_service_start_no_root">Gagal meminta kebenaran root.</string>
-    <string name="notification_working">Bekerja…</string>
     <string name="notification_channel_adb_pairing">Penyahpepijatan berpasangan tanpa wayar</string>
     <string name="notification_adb_pairing_input_paring_code">Masukkan kod berpasangan</string>
     <string name="notification_adb_pairing_searching_for_service_title">Mencari perkhidmatan
@@ -266,7 +259,6 @@
     <string name="wadb_permission_error_notification_title">Ralat Kebenaran</string>
     <string name="wadb_permission_error_notification_content">Shizuku memerlukan
         WRITE_SECURE_SETTINGS untuk bermula semasa but. Ketik untuk mengetahui cara memberikannya.</string>
-    <string name="wadb_notification_channel">Perkhidmatan automula ADB</string>
     <!-- Watchdog -->
     <string name="watchdog_running">Anjing pengawas sedang berjalan</string>
     <string name="watchdog_turn_off">Mati</string>
