@@ -57,10 +57,11 @@ class HomeAdapter(private val homeModel: HomeViewModel, private val appsModel: A
 
             if (EnvironmentUtils.isRooted()) addItem(StartRootViewHolder.CREATOR, rootRestart, ID_START_ROOT)
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
-                (EnvironmentUtils.isTelevision() ||
-                        EnvironmentUtils.getAdbTcpPort() > 0)
-            ) {
+            val isWadbSupported = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R ||
+                    EnvironmentUtils.isTelevision() ||
+                    EnvironmentUtils.getAdbTcpPort() > 0
+
+            if (isWadbSupported) {
                 addItem(StartWirelessAdbViewHolder.creator(scope), null, ID_START_WADB)
             }
 

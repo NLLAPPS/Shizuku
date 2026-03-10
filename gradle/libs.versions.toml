@@ -12,7 +12,8 @@ compileSdkMinorApiLevel = "1" # Set to 0 if none
 minSdkVersion = "26"
 targetSdkVersion = "36"
 javaVersion = "21" # JavaVersion.VERSION_21
-
+nllPluginVersion = "1.0" # Dummy to satisfy toml version requirement
+copyArtifactsPluginVersion= "1.0" # Dummy to satisfy toml version requirement
 
 agp = "9.1.0"
 kotlin = "2.3.10"
@@ -50,6 +51,7 @@ workRuntimeKtx = "2.11.1"
 
 
 [libraries]
+android-buildtoolsGradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 androidx-appcompat =  { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 androidx-browser = { module = "androidx.browser:browser", version.ref = "browser" }
@@ -81,8 +83,12 @@ hidden-stub = { group = "dev.rikka.hidden", name = "stub", version.ref = "hidden
 refine-runtime = { group = "dev.rikka.tools.refine", name = "runtime", version.ref = "rikkaRefine" }
 refine-annotation = { group = "dev.rikka.tools.refine", name = "annotation", version.ref = "rikkaRefine" }
 refine-annotation-processor = { group = "dev.rikka.tools.refine", name = "annotation-processor", version.ref = "rikkaRefine" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
 
 [plugins]
+nll-newDslPlugin = { id = "nll.newdsl", version.ref = "nllPluginVersion" }
+nll-copyArtifactsPlugin = { id = "nll.copyArtifacts", version.ref = "copyArtifactsPluginVersion" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

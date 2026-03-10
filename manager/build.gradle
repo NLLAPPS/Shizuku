@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.rikka.refine)
+    alias(libs.plugins.nll.newDslPlugin)
 }
 
 android {
@@ -57,9 +57,7 @@ android {
             version = "3.31.0+"
         }
     }
-    kotlinOptions {
-        jvmTarget = "21"
-    }
+
     packagingOptions {
         jniLibs {
             useLegacyPackaging = true

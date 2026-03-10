@@ -1,32 +1,20 @@
+buildscript {
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin") {
+            /**
+             * Use our Kotlin version not the one that is bundled built-in with agp
+             * https://issuetracker.google.com/issues/438678642#comment21
+             * https://developer.android.com/build/releases/agp-preview#runtime-dependency-on-kotlin-gradle-plugin
+             */
+            version { strictly(libs.versions.kotlin.get()) }
+        }
+    }
+}
+
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
-    alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.rikka.refine) apply false
-}
-
-subprojects { subproject ->
-    def javaVersionEnum = JavaVersion.toVersion(libs.versions.javaVersion.get().toString())
-
-    plugins.withId("com.android.base") {
-        android {
-            compileSdk = libs.versions.compileSdkVersion.get().toInteger()
-            ndkVersion = libs.versions.ndkVersion.get()
-            defaultConfig {
-                minSdk(libs.versions.minSdkVersion.get().toInteger())
-                targetSdk(libs.versions.targetSdkVersion.get().toInteger())
-            }
-            compileOptions {
-                sourceCompatibility = javaVersionEnum
-                targetCompatibility = javaVersionEnum
-            }
-            externalNativeBuild {
-                cmake {
-                    buildStagingDirectory = file("${System.properties['user.home']}${File.separator}.build-cxx${File.separator}${rootProject.name}${File.separator}${project.name}")
-                }
-            }
-        }
-    }
 }
 
 

@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.rikka.refine)
+    alias(libs.plugins.nll.newDslPlugin)
+    alias(libs.plugins.nll.copyArtifactsPlugin)
 }
 
 android {
@@ -8,12 +10,9 @@ android {
     defaultConfig {
         versionCode = libs.versions.appVersionCode.get().toInteger()
         versionName = libs.versions.appVersionName.get()
-
         buildConfigField(
                 "String", "MANAGER_APPLICATION_ID", "\"${libs.versions.appPackageName.get()}\""
         )
-
-
     }
     buildTypes {
         debug {
@@ -35,33 +34,6 @@ android {
     }
 }
 
-android.applicationVariants.all { variant ->
-    variant.outputs.all {
-        def outDir = new File(rootDir, "out")
-        def mappingPath = new File(outDir, "mapping").absolutePath
-        def dexPath = "${rootProject.rootDir.path}/manager/src/main/assets"
-        variant.assembleProvider.get().doLast {
-            if (variant.getBuildType().isMinifyEnabled()) {
-                copy {
-                    from variant.mappingFileProvider.get()
-                    into mappingPath
-                    rename { String fileName ->
-                        mappingPath + File.separator + "cmd-v${variant.versionName}.txt"
-                    }
-                }
-            }
-            copy {
-                def file = zipTree(file(outputFile)).matching { include "classes*.dex" }.singleFile
-
-                from file
-                into dexPath
-                rename { String fileName ->
-                    fileName.replace(file.getName(), "rish_shizuku.dex")
-                }
-            }
-        }
-    }
-}
 
 dependencies {
     implementation libs.hidden.compat

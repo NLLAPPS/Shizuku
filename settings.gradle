@@ -40,6 +40,7 @@ if (propFile.canRead()) {
     }
 }
 
+includeBuild("build-logic")
 include ":aidl"
 project(":aidl").projectDir = file("$root${File.separator}aidl")
 
