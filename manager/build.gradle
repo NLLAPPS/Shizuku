@@ -10,6 +10,7 @@ android {
         applicationId = libs.versions.appPackageName.get()
         versionCode = libs.versions.appVersionCode.get().toInteger()
         versionName = libs.versions.appVersionName.get()
+
         externalNativeBuild {
             cmake {
                 arguments = [
@@ -26,6 +27,7 @@ android {
         buildConfigField(
                 "String", "EXTRA_BINDER", "\"${libs.versions.appExtraBinder.get()}\""
         )
+
 
     }
     androidResources {

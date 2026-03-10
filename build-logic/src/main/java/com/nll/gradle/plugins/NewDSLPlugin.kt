@@ -101,7 +101,7 @@ abstract class NewDSLPlugin : Plugin<Project> {
     }
 
     private fun Any.configureAndroidBaseOptions(tomlLibs: VersionCatalog, project: Project) {
-        // Workaround to avoid specifying the parametrized types of CommonExtension explicitly
+        // Workaround to avoid specifying the parametrised types of CommonExtension explicitly
         // So we can clean up the parameters in AGP
         // The compiler can infer that this is CommonExtension from these checks
         if (this !is ApplicationExtension && this !is LibraryExtension && this !is TestExtension) {
@@ -118,9 +118,13 @@ abstract class NewDSLPlugin : Plugin<Project> {
 
         ndkVersion =  tomlLibs.findVersion("ndkVersion").get().toString()
 
+
         defaultConfig.apply {
             minSdk = minSdkVersion
             vectorDrawables.useSupportLibrary = true
+            ndk{
+                abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64")
+            }
         }
 
         buildFeatures.apply {
@@ -139,14 +143,13 @@ abstract class NewDSLPlugin : Plugin<Project> {
                 }
             }
         }
+
         externalNativeBuild.cmake{
             buildStagingDirectory = File(System.getProperty("user.home"))
                 .resolve(".build-cxx")
                 .resolve(project.rootProject.name)
                 .resolve(project.name)
         }
-
-
 
     }
 
