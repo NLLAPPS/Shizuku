@@ -45,7 +45,6 @@ class HomeAdapter(private val homeModel: HomeViewModel, private val appsModel: A
 
         if (adbPermission) {
             addItem(ManageAppsViewHolder.CREATOR, status to grantedCount, ID_APPS)
-            addItem(TerminalViewHolder.CREATOR, status, ID_TERMINAL)
         }
 
         if (running && !adbPermission) {
@@ -55,7 +54,9 @@ class HomeAdapter(private val homeModel: HomeViewModel, private val appsModel: A
         if (isPrimaryUser) {
             val rootRestart = running && status.uid == 0
 
-            if (EnvironmentUtils.isRooted()) addItem(StartRootViewHolder.CREATOR, rootRestart, ID_START_ROOT)
+            if (EnvironmentUtils.isRooted()) {
+                addItem(StartRootViewHolder.CREATOR, rootRestart, ID_START_ROOT)
+            }
 
             val isWadbSupported = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R ||
                     EnvironmentUtils.isTelevision() ||
@@ -68,7 +69,6 @@ class HomeAdapter(private val homeModel: HomeViewModel, private val appsModel: A
             addItem(StartAdbViewHolder.CREATOR, null, ID_START_ADB)
         }
         addItem(AutomationViewHolder.CREATOR, null, ID_AUTOMATION)
-        addItem(LearnMoreViewHolder.CREATOR, null, ID_LEARN_MORE)
         notifyDataSetChanged()
     }
 }
