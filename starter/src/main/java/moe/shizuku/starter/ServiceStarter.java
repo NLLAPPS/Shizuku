@@ -99,7 +99,15 @@ public class ServiceStarter {
         IContentProvider provider = null;
 
         try {
-            provider = ActivityManagerApis.getContentProviderExternal(name, userId, null, name);
+            for(int i = 0; i < 5;i++){
+                provider = ActivityManagerApis.getContentProviderExternal(name, userId, null, name);
+                if (provider != null){
+                    break;
+                } else {
+                    Thread.sleep(200);
+                    Log.w(TAG, String.format("provider is null %s %d,try times %d", name, userId,i+1));
+                }
+            }
             if (provider == null) {
                 Log.e(TAG, String.format("provider is null %s %d", name, userId));
                 return false;
