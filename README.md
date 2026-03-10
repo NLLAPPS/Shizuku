@@ -1,6 +1,8 @@
 # Shizuku
 
-This is a **FORK** of [thedjchi/Shizuku](https://github.com/thedjchi/Shizuku) by NLL Apps. If you are looking for the original version, please visit the [RikkaApps/Shizuku](https://github.com/RikkaApps/Shizuku) repository.
+This is a fork of [thedjchi/Shizuku](https://github.com/thedjchi/Shizuku) by NLL Apps. If you are looking for the original version, please visit the [RikkaApps/Shizuku](https://github.com/RikkaApps/Shizuku) repository.
+
+This fork is not intended for general use. Support only provided in the context of official NLL Apps products. If you are not a NLL Apps customer, please use the original or **thedjchi** version of **Shizuku**.
 
 ## Download from
 
