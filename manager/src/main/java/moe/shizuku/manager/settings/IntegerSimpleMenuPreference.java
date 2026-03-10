@@ -16,7 +16,6 @@ import androidx.core.content.res.TypedArrayUtils;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import moe.shizuku.manager.R;
 import rikka.preference.simplemenu.SimpleMenuPopupWindow;
 
 /**
@@ -44,13 +43,13 @@ public class IntegerSimpleMenuPreference extends Preference {
         super(context, attrs, defStyleAttr, defStyleRes);
 
         TypedArray a = context.obtainStyledAttributes(
-                attrs, R.styleable.ListPreference, defStyleAttr, defStyleRes);
+                attrs, androidx.preference.R.styleable.ListPreference, defStyleAttr, defStyleRes);
 
-        mEntries = TypedArrayUtils.getTextArray(a, R.styleable.ListPreference_entries,
-                R.styleable.ListPreference_android_entries);
+        mEntries = TypedArrayUtils.getTextArray(a, androidx.preference.R.styleable.ListPreference_entries,
+                androidx.preference.R.styleable.ListPreference_android_entries);
 
-        mEntryValues = getIntArray(a, R.styleable.ListPreference_entryValues,
-                R.styleable.ListPreference_android_entryValues);
+        mEntryValues = getIntArray(a, androidx.preference.R.styleable.ListPreference_entryValues,
+                androidx.preference.R.styleable.ListPreference_android_entryValues);
 
         a.recycle();
 
@@ -58,25 +57,25 @@ public class IntegerSimpleMenuPreference extends Preference {
          * in the Preference class.
          */
         a = context.obtainStyledAttributes(attrs,
-                R.styleable.Preference, defStyleAttr, defStyleRes);
+                androidx.preference.R.styleable.Preference, defStyleAttr, defStyleRes);
 
-        mSummary = TypedArrayUtils.getString(a, R.styleable.Preference_summary,
-                R.styleable.Preference_android_summary);
+        mSummary = TypedArrayUtils.getString(a, androidx.preference.R.styleable.Preference_summary,
+                androidx.preference.R.styleable.Preference_android_summary);
 
         a.recycle();
 
         a = context.obtainStyledAttributes(
-                attrs, R.styleable.SimpleMenuPreference, defStyleAttr, defStyleRes);
+                attrs, rikka.preference.simplemenu.R.styleable.SimpleMenuPreference, defStyleAttr, defStyleRes);
 
-        int popupStyle = a.getResourceId(R.styleable.SimpleMenuPreference_android_popupMenuStyle, R.style.Widget_Preference_SimpleMenuPreference_PopupMenu);
-        int popupTheme = a.getResourceId(R.styleable.SimpleMenuPreference_android_popupTheme,R.style.ThemeOverlay_Preference_SimpleMenuPreference_PopupMenu);
+        int popupStyle = a.getResourceId(rikka.preference.simplemenu.R.styleable.SimpleMenuPreference_android_popupMenuStyle, rikka.preference.simplemenu.R.style.Widget_Preference_SimpleMenuPreference_PopupMenu);
+        int popupTheme = a.getResourceId(rikka.preference.simplemenu.R.styleable.SimpleMenuPreference_android_popupTheme, rikka.preference.simplemenu.R.style.ThemeOverlay_Preference_SimpleMenuPreference_PopupMenu);
         Context popupContext;
         if (popupTheme != 0) {
             popupContext = new ContextThemeWrapper(context, popupTheme);
         } else {
             popupContext = context;
         }
-        mPopupWindow = new SimpleMenuPopupWindow(popupContext, attrs, R.styleable.SimpleMenuPreference_android_popupMenuStyle, popupStyle);
+        mPopupWindow = new SimpleMenuPopupWindow(popupContext, attrs, rikka.preference.simplemenu.R.styleable.SimpleMenuPreference_android_popupMenuStyle, popupStyle);
         mPopupWindow.setOnItemClickListener(i -> {
             int value = getEntryValues()[i];
             if (callChangeListener(value)) {
@@ -88,11 +87,11 @@ public class IntegerSimpleMenuPreference extends Preference {
     }
 
     public IntegerSimpleMenuPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        this(context, attrs, defStyleAttr, R.style.Preference_SimpleMenuPreference);
+        this(context, attrs, defStyleAttr, rikka.preference.simplemenu.R.style.Preference_SimpleMenuPreference);
     }
 
     public IntegerSimpleMenuPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.simpleMenuPreferenceStyle);
+        this(context, attrs, rikka.preference.simplemenu.R.attr.simpleMenuPreferenceStyle);
     }
 
     public IntegerSimpleMenuPreference(Context context) {

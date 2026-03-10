@@ -413,7 +413,7 @@ class SettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSharedP
     private fun tint(icon: Drawable?): Drawable? {
         val context = requireContext()
         val tintColor = TypedValue()
-        context.theme.resolveAttribute(R.attr.colorOnSurfaceVariant, tintColor, true)
+        context.theme.resolveAttribute(com.google.android.material.R.attr.colorOnSurfaceVariant, tintColor, true)
         icon?.mutate()?.setTint(tintColor.data)
         return icon
     }
