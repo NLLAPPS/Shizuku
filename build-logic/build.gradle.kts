@@ -33,11 +33,8 @@ gradlePlugin {
 
 
     allprojects {
-        /**
-         * We do not have access to actual project name here. It returns null and rootProject returns "buildSrc"
-         * So ww manually add ACRPhoneProject
-         */
-        layout.buildDirectory.set(File("${System.getProperty("user.home")}${File.separator}.build${File.separator}ACRPhoneProject${File.separator}${rootProject.name}${File.separator}${project.name}"))
+        val rootName = gradle.parent?.rootProject?.name ?: rootProject.name
+        layout.buildDirectory.set(File("${System.getProperty("user.home")}${File.separator}.build${File.separator}$rootName${File.separator}${rootProject.name}${File.separator}${project.name}"))
         project.logger.lifecycle("Project build-logic buildDir -> ${layout.buildDirectory.get()}")
     }
 }

@@ -1,6 +1,6 @@
 buildscript {
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin") {
+        classpath(libs.kotlin.gradlePlugin) {
             /**
              * Use our Kotlin version not the one that is bundled built-in with agp
              * https://issuetracker.google.com/issues/438678642#comment21

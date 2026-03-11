@@ -90,5 +90,4 @@ nll-newDslPlugin = { id = "nll.newdsl", version.ref = "nllPluginVersion" }
 nll-copyArtifactsPlugin = { id = "nll.copyArtifacts", version.ref = "copyArtifactsPluginVersion" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 rikka-refine = { id = "dev.rikka.tools.refine", version.ref = "rikkaRefine" }
