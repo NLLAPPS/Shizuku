@@ -122,8 +122,6 @@
         στείλουν intents για την αυτόματη εκκίνηση/διακοπή του Shizuku.</string>
     <string name="home_automation_button_view_intents">Προβολή προθέσεων</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Οδηγός προγραμματιστή</string>
-    <string name="home_learn_more_description">Μάθετε πώς να αναπτύσσεστε με το Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Πρέπει να κάνεις ένα επιπλέον βήμα</string>
     <string name="home_adb_is_limited_description">Ο κατασκευαστής της συσκευής σας έχει περιορίσει
@@ -139,8 +137,6 @@
     <string name="app_management_toggle_all">Εναλλαγή όλων</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Χρήση Shizuku σε εφαρμογές τερματικού</string>
-    <string name="home_terminal_description">Εκτέλεση εντολών κελύφους σε εφαρμογές τερματικού μέσω
-        Shizuku</string>
     <string name="terminal_tutorial_miui">Οι χρήστες έχουν αναφέρει ότι το MIUI παραβιάζει το
         Storage Access Framework, το οποίο χρησιμοποιείται από τη λειτουργία εξαγωγής.</string>
     <string name="terminal_tutorial_miui_2">Εάν χρησιμοποιείτε MIUI, ίσως χρειαστεί να εξαγάγετε το

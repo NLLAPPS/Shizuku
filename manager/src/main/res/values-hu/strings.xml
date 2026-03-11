@@ -120,8 +120,6 @@
         küldhetnek szándékokat a Shizuku automatikus indításához/leállításához.</string>
     <string name="home_automation_button_view_intents">Szándékok megtekintése</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Fejlesztői útmutató</string>
-    <string name="home_learn_more_description">Tanuljon meg fejlődni a Shizukuval</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Egy plusz lépést kell tennie</string>
     <string name="home_adb_is_limited_description">Az eszköz gyártója korlátozta az
@@ -137,8 +135,6 @@
     <string name="app_management_toggle_all">Összes ki-/bekapcsolása</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Használja a Shizukut a terminál appokban</string>
-    <string name="home_terminal_description">Futtassa a shell parancsokat terminálalkalmazásokban a
-        Shizuku segítségével</string>
     <string name="terminal_tutorial_miui">A felhasználók arról számoltak be, hogy az MIUI sérti a
         Storage Access Frameworköt, amelyet az exportálási funkció használ.</string>
     <string name="terminal_tutorial_miui_2">Ha MIUI-t használsz, lehet, hogy ki kell csomagolnod a

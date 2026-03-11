@@ -93,8 +93,6 @@
         보낼 수 있습니다.</string>
     <string name="home_automation_button_view_intents">의도 보기</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">개발자 가이드</string>
-    <string name="home_learn_more_description">Shizuku로 개발하는 방법 알아보기</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">추가 단계를 진행해야 합니다</string>
     <string name="home_adb_is_limited_description">디바이스 제조업체에서 ADB 권한을 제한하여 Shizuku를 사용하는 앱이 제대로
@@ -110,7 +108,6 @@
     <string name="app_management_toggle_all">모두 전환</string>
     <!-- Terminal -->
     <string name="home_terminal_title">터미널에서 Shizuku 사용</string>
-    <string name="home_terminal_description">Shizuku를 통해 터미널 앱에서 셸 명령 실행</string>
     <string name="terminal_tutorial_miui">사용자들은 MIUI가 내보내기 기능에서 사용되는 Storage Access Framework를
         손상시킨다고 보고했습니다.</string>
     <string name="terminal_tutorial_miui_2">MIUI를 사용하는 경우 Shizuku APK의 assets 폴더에서 파일을 추출해야 할 수도

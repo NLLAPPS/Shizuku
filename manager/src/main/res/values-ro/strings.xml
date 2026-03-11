@@ -114,8 +114,6 @@
         intenții de pornire/oprire automată a Shizuku.</string>
     <string name="home_automation_button_view_intents">Vizualizați intențiile</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Ghid pentru dezvoltatori</string>
-    <string name="home_learn_more_description">Află cum să dezvolți cu Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Trebuie să faci un pas suplimentar</string>
     <string name="home_adb_is_limited_description">Producătorul dispozitivului are permisiuni adb
@@ -132,8 +130,6 @@
     <string name="app_management_toggle_all">Comutare toate</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Utilizează Shizuku în aplicații terminale</string>
-    <string name="home_terminal_description">Executați comenzi shell în aplicațiile terminale prin
-        Shizuku</string>
     <string name="terminal_tutorial_miui">Utilizatorii au raportat că MIUI încalcă Storage Access
         Framework, care este utilizat de funcția de export.</string>
     <string name="terminal_tutorial_miui_2">Dacă folosești MIUI, este posibil să fie nevoie să

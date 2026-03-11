@@ -115,8 +115,6 @@
         intent untuk memulai/menghentikan Shizuku secara otomatis.</string>
     <string name="home_automation_button_view_intents">Lihat maksud</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Panduan pengembang</string>
-    <string name="home_learn_more_description">Pelajari cara mengembangkan dengan Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Anda perlu mengambil langkah ekstra</string>
     <string name="home_adb_is_limited_description">Produsen perangkat Anda telah membatasi izin adb
@@ -133,8 +131,6 @@
     <string name="app_management_toggle_all">Beralih semua</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Gunakan Shizuku pada aplikasi terminal</string>
-    <string name="home_terminal_description">Jalankan perintah shell di aplikasi terminal melalui
-        Shizuku</string>
     <string name="terminal_tutorial_miui">Pengguna telah melaporkan bahwa MIUI merusak Storage
         Access Framework yang digunakan oleh fungsi ekspor.</string>
     <string name="terminal_tutorial_miui_2">Jika Anda menggunakan MIUI, Anda mungkin harus

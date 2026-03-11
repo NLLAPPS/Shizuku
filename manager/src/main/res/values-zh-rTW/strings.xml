@@ -85,8 +85,6 @@
         Shizuku。</string>
     <string name="home_automation_button_view_intents">查看意圖</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">開發者指南</string>
-    <string name="home_learn_more_description">瞭解如何使用 Shizuku 開發</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">您需要進行額外的步驟</string>
     <string name="home_adb_is_limited_description">您的裝置製造商限制了 ADB 的權限，使用 Shizuku
@@ -98,7 +96,6 @@
     <string name="app_management_toggle_all">切換全部</string>
     <!-- Terminal -->
     <string name="home_terminal_title">在終端機應用程式中使用 Shizuku</string>
-    <string name="home_terminal_description">透過 Shizuku 在終端應用程式中執行 shell 命令</string>
     <string name="terminal_tutorial_miui">使用者反映 MIUI 破壞了匯出功能所使用的儲存存取框架。</string>
     <string name="terminal_tutorial_miui_2">如果您使用的是 MIUI 系統，則可能需要從 Shizuku 的 APK 的 assets 資料夾中提取該檔案。</string>
     <string name="terminal_tutorial_1">將文件匯出到新資料夾。</string>

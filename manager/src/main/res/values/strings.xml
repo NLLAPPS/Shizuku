@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Shizuku (NLL)</string>
+
 
     <!-- To translators: you can leave your here -->
     <string name="translation_contributors" >Contributors</string>
@@ -79,7 +79,7 @@
     <!-- Home - Automation -->
     <string name="home_automation_title">Control Shizuku with automation apps</string>
     <string name="home_automation_description">Apps like Tasker and MacroDroid can send intents to start/stop Shizuku automatically.</string>
-    <string name="home_automation_description_device_restriction" translatable="false">To use the start intent on your device, you first need to enable ADB over TCP by running %1$s from a PC.</string>
+    <string name="home_automation_description_device_restriction">To use the start intent on your device, you first need to enable ADB over TCP by running %1$s from a PC.</string>
     <string name="home_automation_button_view_intents">View intents</string>
     <string name="home_automation_bottom_sheet_intents">Intents</string>
     <string name="home_automation_bottom_sheet_label_action">Action</string>
@@ -90,8 +90,6 @@
     <string name="home_automation_regenerate_token_message">You will need to reconfigure your intents with the new token.</string>
 
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Developer guide</string>
-    <string name="home_learn_more_description">Learn how to develop with Shizuku</string>
 
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">You need to take an extra step</string>
@@ -105,7 +103,6 @@
 
     <!-- Terminal -->
     <string name="home_terminal_title">Use Shizuku in terminal apps</string>
-    <string name="home_terminal_description">Run shell commands in terminal apps through Shizuku</string>
     <string name="terminal_tutorial_miui">Users have reported that MIUI breaks the Storage Access Framework, which is used by the export function.</string>
     <string name="terminal_tutorial_miui_2">If you are using MIUI, you may have to extract the file from the assets folder in Shizuku\'s APK.</string>
     <string name="terminal_tutorial_1">Export the files to a new folder.</string>
@@ -208,9 +205,7 @@
     <string name="notification_auth_invalid_title">Invalid auth token</string>
     <string name="notification_auth_invalid_message">Make sure the token in your intent matches the one shown under “View intents” in the app.</string>
 
-    <!-- Permission related, appears in system permission UI -->
-    <string name="permission_group_label" translatable="false">Shizuku</string>
-    <string name="permission_group_description" translatable="false">@string/permission_label</string>
+
     <string name="permission_label">access Shizuku</string>
     <string name="permission_description">Allow the app to use Shizuku.</string>
     <string name="permission_warning_template"><![CDATA[Allow <b>%1$s</b> to %2$s?]]></string>

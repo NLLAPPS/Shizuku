@@ -114,9 +114,6 @@
         avtomatik başlatmaq/dayandırmaq niyyətlərini göndərə bilər.</string>
     <string name="home_automation_button_view_intents">Niyyətlərə baxın</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Tərtibatçı təlimatı</string>
-    <string name="home_learn_more_description">Necə Shizuku dəstəkli proqram hazırlaya biləcəyinizi
-        öyrənin və ya Shizuku dəstəkli proqramları əldə edin</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Əlavə bir addım atmalısan</string>
     <string name="home_adb_is_limited_description">Cihaz istehsalçınız adb icazələrini
@@ -131,8 +128,6 @@
     <string name="app_management_toggle_all">Hamısını dəyiş</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Shizikunu terminal proqramlarında istifadə edin</string>
-    <string name="home_terminal_description">Shizuku vasitəsilə terminal proqramlarında qabıq
-        əmrlərini işlədin</string>
     <string name="terminal_tutorial_miui">İstifadəçilər MIUI-nin ixrac funksiyası tərəfindən
         istifadə edilən Yaddaş Giriş Çərçivəsini pozduğunu bildirdilər.</string>
     <string name="terminal_tutorial_miui_2">Əgər MIUI istifadə edirsinizsə, faylı Shizuku

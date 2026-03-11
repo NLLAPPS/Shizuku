@@ -115,8 +115,6 @@
         niat untuk memulakan/menghentikan Shizuku secara automatik.</string>
     <string name="home_automation_button_view_intents">Lihat niat</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Panduan pembangun</string>
-    <string name="home_learn_more_description">Ketahui cara membangun dengan Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Anda perlu mengambil langkah tambahan</string>
     <string name="home_adb_is_limited_description">Pengilang peranti anda telah mengehadkan
@@ -132,8 +130,6 @@
     <string name="app_management_toggle_all">Togol semua</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Gunakan Shizuku dalam apl terminal</string>
-    <string name="home_terminal_description">Jalankan arahan shell dalam apl terminal melalui
-        Shizuku</string>
     <string name="terminal_tutorial_miui">Pengguna telah melaporkan bahawa MIUI memecahkan Rangka
         Kerja Akses Storan, yang digunakan oleh fungsi eksport.</string>
     <string name="terminal_tutorial_miui_2">Jika anda menggunakan MIUI, anda mungkin perlu

@@ -116,8 +116,6 @@
         pošiljajo namere za samodejni zagon/ustavitev aplikacije Shizuku.</string>
     <string name="home_automation_button_view_intents">Ogled namenov</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Vodnik za razvijalce</string>
-    <string name="home_learn_more_description">Naučite se razvijati s Shizukujem</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Morate narediti dodaten korak</string>
     <string name="home_adb_is_limited_description">Proizvajalec vaše naprave je omejil dovoljenja
@@ -132,8 +130,6 @@
     <string name="app_management_toggle_all">Preklopi vse</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Uporaba Shizukuja v terminalskih aplikacijah</string>
-    <string name="home_terminal_description">Zaženite ukaze lupine v terminalskih aplikacijah prek
-        Shizukuja</string>
     <string name="terminal_tutorial_miui">Uporabniki so poročali, da MIUI krši ogrodje za dostop do
         shrambe, ki ga uporablja funkcija izvoza.</string>
     <string name="terminal_tutorial_miui_2">Če uporabljate MIUI, boste morda morali datoteko izvleči

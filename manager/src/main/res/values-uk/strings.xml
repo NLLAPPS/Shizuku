@@ -119,8 +119,6 @@
         надсилати наміри для автоматичного запуску/зупинки Shizuku.</string>
     <string name="home_automation_button_view_intents">Переглянути наміри</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Посібник розробника</string>
-    <string name="home_learn_more_description">Дізнайтеся, як розробляти з Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Потрібен ще один крок</string>
     <string name="home_adb_is_limited_description">Виробник вашого пристрою обмежив права ADB,
@@ -137,8 +135,6 @@
     <string name="app_management_toggle_all">Перемкнути все</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Використовувати Shizuku в програмах терміналу</string>
-    <string name="home_terminal_description">Запуск команд оболонки в термінальних програмах через
-        Shizuku</string>
     <string name="terminal_tutorial_miui">Користувачі повідомляли, що MIUI порушує технологію
         доступу до сховища, яка використовується функцією експорту.</string>
     <string name="terminal_tutorial_miui_2">Якщо ви використовуєте MIUI, можливо, вам доведеться

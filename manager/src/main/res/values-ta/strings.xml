@@ -116,8 +116,6 @@
         தானாகத் தொடங்க/நிறுத்த இன்டென்ட்களை அனுப்ப முடியும்.</string>
     <string name="home_automation_button_view_intents">நோக்கங்களைக் காண்க</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">டெவலப்பர் வழிகாட்டி</string>
-    <string name="home_learn_more_description">ஷிசுகுவுடன் எவ்வாறு உருவாக்குவது என்பதை அறிக</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">நீங்கள் ஒரு கூடுதல் படி எடுக்க வேண்டும்.</string>
     <string name="home_adb_is_limited_description">உங்கள் சாதன உற்பத்தியாளர் adb அனுமதிகளை
@@ -133,8 +131,6 @@
     <string name="app_management_toggle_all">அனைத்தையும் மாற்று</string>
     <!-- Terminal -->
     <string name="home_terminal_title">டெர்மினல் பயன்பாடுகளில் ஷிசுகுவைப் பயன்படுத்தவும்</string>
-    <string name="home_terminal_description">ஷிசுகு வழியாக டெர்மினல் பயன்பாடுகளில் ஷெல் கட்டளைகளை
-        இயக்கவும்.</string>
     <string name="terminal_tutorial_miui">ஏற்றுமதி செயல்பாட்டால் பயன்படுத்தப்படும் சேமிப்பக அணுகல்
         கட்டமைப்பை MIUI உடைப்பதாக பயனர்கள் தெரிவித்துள்ளனர்.</string>
     <string name="terminal_tutorial_miui_2">நீங்கள் MIUI ஐப் பயன்படுத்துகிறீர்கள் என்றால்,

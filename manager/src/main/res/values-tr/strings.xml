@@ -116,8 +116,6 @@
         otomatik olarak başlatmak/durdurmak için niyetler gönderebilir.</string>
     <string name="home_automation_button_view_intents">Görünüm amaçları</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Geliştirici kılavuzu</string>
-    <string name="home_learn_more_description">Shizuku ile nasıl uygulama geliştireceğinizi öğrenin</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Fazladan bi adım daha yapmanız gerekiyor</string>
     <string name="home_adb_is_limited_description">Cihaz üreticiniz adb izinlerini kısıtladığı için
@@ -135,8 +133,6 @@
     <string name="app_management_toggle_all">Tümünü aç/kapat</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Shizuku’yu terminal uygulamalarında kullanın</string>
-    <string name="home_terminal_description">Shizuku aracılığıyla terminal uygulamalarında kabuk
-        komutlarını çalıştırın</string>
     <string name="terminal_tutorial_miui">Kullanıcılar, MIUI\'nin dışa aktarma işlevi tarafından
         kullanılan Depolama Erişim Çerçevesini bozduğunu bildirdi.</string>
     <string name="terminal_tutorial_miui_2">Eğer MIUI kullanıyorsanız, dosyayı Shizuku\'nun

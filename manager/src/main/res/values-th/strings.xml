@@ -109,8 +109,6 @@
         สามารถส่งอินเทนต์เพื่อเริ่ม/หยุด Shizuku ได้โดยอัตโนมัติ</string>
     <string name="home_automation_button_view_intents">ดูความตั้งใจ</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">คู่มือนักพัฒนา</string>
-    <string name="home_learn_more_description">เรียนรู้การพัฒนาเพื่อใช้ร่วมกันกับ Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">คุณต้องทำขั้นตอนเพิ่มเติม</string>
     <string name="home_adb_is_limited_description">ผู้ผลิตอุปกรณ์ของคุณ จำกัดการอนุญาต adb
@@ -127,7 +125,6 @@
     <string name="app_management_toggle_all">สลับทั้งหมด</string>
     <!-- Terminal -->
     <string name="home_terminal_title">ใช้ Shizuku ในแอปเทอร์มินอล</string>
-    <string name="home_terminal_description">รันคำสั่งเชลล์ในแอปเทอร์มินัลผ่าน Shizuku</string>
     <string name="terminal_tutorial_miui">ผู้ใช้รายงานว่า MIUI ทำลาย Storage Access Framework
         ซึ่งใช้โดยฟังก์ชันการส่งออก</string>
     <string name="terminal_tutorial_miui_2">หากคุณใช้ MIUI คุณอาจต้องแตกไฟล์จากโฟลเดอร์สินทรัพย์ใน

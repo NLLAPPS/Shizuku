@@ -111,8 +111,6 @@
         لبدء/إيقاف Shizuku تلقائيًا.</string>
     <string name="home_automation_button_view_intents">عرض النوايا</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">دليل المطور</string>
-    <string name="home_learn_more_description">تعلم كيف تطور مع Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">أنت بحاجة إلى اتخاذ خطوة إضافية</string>
     <string name="home_adb_is_limited_description">قامت الشركة المصنعة لجهازك بتقييد أذونات adb ولن
@@ -129,8 +127,6 @@
     <string name="app_management_toggle_all">تبديل الكل</string>
     <!-- Terminal -->
     <string name="home_terminal_title">استخدم Shizuku في تطبيقات المحطة</string>
-    <string name="home_terminal_description">تشغيل أوامر shell في تطبيقات المحطة الطرفية من خلال
-        Shizuku</string>
     <string name="terminal_tutorial_miui">أبلغ المستخدمون أن MIUI يكسر إطار عمل الوصول إلى التخزين،
         والذي تستخدمه وظيفة التصدير.</string>
     <string name="terminal_tutorial_miui_2">إذا كنت تستخدم MIUI، فقد تحتاج إلى استخراج الملف من مجلد

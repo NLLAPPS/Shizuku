@@ -112,9 +112,6 @@
         intencje automatycznego uruchamiania/zatrzymywania Shizuku.</string>
     <string name="home_automation_button_view_intents">Wyświetl intencje</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Przewodnik dla programistów</string>
-    <string name="home_learn_more_description">Dowiedz się, jak tworzyć aplikacje z wykorzystaniem
-        Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Wymagany dodatkowy krok</string>
     <string name="home_adb_is_limited_description">Producent urządzenia ograniczył uprawnienia ADB i
@@ -129,8 +126,6 @@
     <string name="app_management_toggle_all">Przełącz wszystkie</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Używaj Shizuku w terminalu</string>
-    <string name="home_terminal_description">Uruchamianie poleceń powłoki w aplikacjach
-        terminalowych za pomocą Shizuku</string>
     <string name="terminal_tutorial_miui">Użytkownicy zgłosili, że MIUI zakłóca działanie Storage
         Access Framework, który jest wykorzystywany przez funkcję eksportu.</string>
     <string name="terminal_tutorial_miui_2">Jeśli używasz MIUI, może być konieczne wyodrębnienie

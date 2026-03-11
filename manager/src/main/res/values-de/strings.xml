@@ -120,8 +120,6 @@
         um Shizuku automatisch zu starten/stoppen.</string>
     <string name="home_automation_button_view_intents">Absichten anzeigen</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Entwicklerhandbuch</string>
-    <string name="home_learn_more_description">Lernen Sie, wie Apps mit Shizuku entwickelt werden</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Sie müssen einen zusätzlichen Schritt durchführen</string>
     <string name="home_adb_is_limited_description">Ihr Gerätehersteller hat ADB-Berechtigungen
@@ -141,8 +139,6 @@
     <string name="app_management_toggle_all">Alle umschalten</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Shizuku in Terminal-Apps verwenden</string>
-    <string name="home_terminal_description">Führe Shell-Befehle in Terminalanwendungen über Shizuku
-        aus.</string>
     <string name="terminal_tutorial_miui">Nutzer haben berichtet, dass MIUI das Storage Access
         Framework, das von der Exportfunktion verwendet wird, beeinträchtigt.</string>
     <string name="terminal_tutorial_miui_2">Wenn Sie MIUI verwenden, müssen Sie die Datei

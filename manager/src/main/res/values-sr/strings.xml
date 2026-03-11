@@ -114,8 +114,6 @@
         намере за аутоматско покретање/заустављање Шизукуа.</string>
     <string name="home_automation_button_view_intents">Прикажи намере</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Водич за програмере</string>
-    <string name="home_learn_more_description">Научите како да развијате уз Шизуку</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Морате направити додатни корак</string>
     <string name="home_adb_is_limited_description">Произвођач вашег уређаја је ограничио adb дозволе
@@ -130,8 +128,6 @@
     <string name="app_management_toggle_all">Укључи/искључи све</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Користите Шизуку у терминалним апликацијама</string>
-    <string name="home_terminal_description">Покрените команде шкољке у терминалним апликацијама
-        путем Шизукуа</string>
     <string name="terminal_tutorial_miui">Корисници су пријавили да MIUI крши Storage Access
         Framework, који користи функција извоза.</string>
     <string name="terminal_tutorial_miui_2">Ако користите MIUI, можда ћете морати да извучете

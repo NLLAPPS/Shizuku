@@ -115,8 +115,6 @@
         შეუძლიათ Shizuku-ს ავტომატურად გაგზავნონ/გამორთონ intent-ები.</string>
     <string name="home_automation_button_view_intents">ხედვის განზრახვები</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">დეველოპერის სახელმძღვანელო</string>
-    <string name="home_learn_more_description">ისწავლეთ როგორ განვითარდეთ Shizuku-სთან ერთად</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">თქვენ უნდა გადადგათ დამატებითი ნაბიჯი</string>
     <string name="home_adb_is_limited_description">თქვენი მოწყობილობის მწარმოებელმა შეზღუდა adb
@@ -131,8 +129,6 @@
     <string name="app_management_toggle_all">ყველაფრის გადართვა</string>
     <!-- Terminal -->
     <string name="home_terminal_title">გამოიყენეთ Shizuku ტერმინალის აპებში</string>
-    <string name="home_terminal_description">ტერმინალის აპლიკაციებში shell ბრძანებების გაშვება
-        Shizuku-ს მეშვეობით</string>
     <string name="terminal_tutorial_miui">მომხმარებლებმა განაცხადეს, რომ MIUI არღვევს Storage Access
         Framework-ს, რომელსაც ექსპორტის ფუნქცია იყენებს.</string>
     <string name="terminal_tutorial_miui_2">თუ MIUI-ს იყენებთ, შესაძლოა ფაილის ამოღება Shizuku-ს APK

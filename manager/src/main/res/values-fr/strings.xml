@@ -116,8 +116,6 @@
         envoyer des intentions pour démarrer/arrêter Shizuku automatiquement.</string>
     <string name="home_automation_button_view_intents">Afficher les intentions</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Guide du développeur</string>
-    <string name="home_learn_more_description">Apprenez comment développer avec Shizuku</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Une étape supplémentaire est nécessaire</string>
     <string name="home_adb_is_limited_description">Le fabricant de votre appareil a restreint les
@@ -135,8 +133,6 @@
     <string name="app_management_toggle_all">Basculer tout</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Utiliser Shizuku dans les applis de terminal</string>
-    <string name="home_terminal_description">Exécutez des commandes shell dans des applications
-        terminales via Shizuku.</string>
     <string name="terminal_tutorial_miui">Des utilisateurs ont signalé que MIUI endommage le Storage
         Access Framework, utilisé par la fonction d\'exportation.</string>
     <string name="terminal_tutorial_miui_2">Si vous utilisez MIUI, vous devrez peut-être extraire le

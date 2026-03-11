@@ -115,9 +115,6 @@
         ավտոմատ կերպով ուղարկել Shizuku-ն մեկնարկելու/անջատելու մտադրություններ:</string>
     <string name="home_automation_button_view_intents">Դիտել մտադրությունները</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Մշակողի ուղեցույց</string>
-    <string name="home_learn_more_description">Սովորեք ծրագրավորել Shizuku-ով կամ Shizuku-ն ուրիշ
-        ծրագրերի հետ օգտագործել</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Դուք պետք է լրացուցիչ քայլ կատարեք</string>
     <string name="home_adb_is_limited_description">Ձեր սարքի արտադրողը սահմանափակել է adb
@@ -134,8 +131,6 @@
     <string name="app_management_toggle_all">Toggle all</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Օգտագործեք Shizuku-ն տերմինալային հավելվածներում</string>
-    <string name="home_terminal_description">Գործարկեք shell հրամանները տերմինալային հավելվածներում
-        Shizuku-ի միջոցով</string>
     <string name="terminal_tutorial_miui">Օգտատերերը հայտնել են, որ MIUI-ը խախտում է Storage Access
         Framework-ը, որն օգտագործվում է արտահանման գործառույթի կողմից։</string>
     <string name="terminal_tutorial_miui_2">Եթե օգտագործում եք MIUI, հնարավոր է, որ ստիպված լինեք

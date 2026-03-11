@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name" translatable="false">Shizuku (NLL)</string>
     <string name="support_email" translatable="false">cb@nllapps.com</string>
-    <string name="translation_url" translatable="false">https://crowdin.com/project/shizuku</string>
+    <string name="translation_url" translatable="false">https://translate.nllapps.com/projects/shizuku/</string>
     <string name="help_url" translatable="false">https://github.com/NLLAPPS/Shizuku/wiki</string>
+
+    <!-- Permission related, appears in system permission UI -->
+    <string name="permission_group_label" translatable="false">Shizuku</string>
+    <string name="permission_group_description" translatable="false">@string/permission_label</string>
 </resources>

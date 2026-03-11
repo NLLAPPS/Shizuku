@@ -84,8 +84,6 @@
     <string name="home_automation_description">Tasker 和 MacroDroid 等应用可以发送 Intent 来自动启动/停止 Shizuku。</string>
     <string name="home_automation_button_view_intents">查看意图</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">开发者指南</string>
-    <string name="home_learn_more_description">了解如何使用 Shizuku 开发</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">您需要进行额外的步骤</string>
     <string name="home_adb_is_limited_description">您的设备制造商限制了 adb 的权限，使用 Shizuku
@@ -97,7 +95,6 @@
     <string name="app_management_toggle_all">切换全部</string>
     <!-- Terminal -->
     <string name="home_terminal_title">在终端应用中使用 Shizuku</string>
-    <string name="home_terminal_description">通过 Shizuku 在终端应用程序中运行 shell 命令</string>
     <string name="terminal_tutorial_miui">用户反映 MIUI 破坏了导出功能所使用的存储访问框架。</string>
     <string name="terminal_tutorial_miui_2">如果您使用的是 MIUI 系统，则可能需要从 Shizuku 的 APK 的 assets 文件夹中提取该文件。</string>
     <string name="terminal_tutorial_1">将文件导出到新文件夹。</string>

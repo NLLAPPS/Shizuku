@@ -113,8 +113,6 @@
         lähettää aikomuksia Shizukun automaattiseen käynnistämiseen/pysäyttämiseen.</string>
     <string name="home_automation_button_view_intents">Näytä aikomukset</string>
     <!-- Home - Learn more -->
-    <string name="home_learn_more_title">Kehittäjän opas</string>
-    <string name="home_learn_more_description">Opi kehittymään Shizukun kanssa</string>
     <!-- Home - Adb permissions limited -->
     <string name="home_adb_is_limited_title">Sinun täytyy ottaa ylimääräinen askel</string>
     <string name="home_adb_is_limited_description">Laitevalmistajasi on rajoittanut adb-oikeuksia,
@@ -129,8 +127,6 @@
     <string name="app_management_toggle_all">Kytke kaikki päälle</string>
     <!-- Terminal -->
     <string name="home_terminal_title">Käytä Shizukua terminaalisovelluksissa</string>
-    <string name="home_terminal_description">Suorita shell-komentoja päätesovelluksissa Shizukun
-        kautta</string>
     <string name="terminal_tutorial_miui">Käyttäjät ovat raportoineet, että MIUI rikkoo
         vientitoiminnon käyttämän Storage Access Frameworkin.</string>
     <string name="terminal_tutorial_miui_2">Jos käytät MIUI-käyttöjärjestelmää, sinun on ehkä
