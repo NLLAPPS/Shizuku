@@ -3,10 +3,8 @@ package com.nll.gradle.plugins
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.LibraryExtension
 import com.android.build.api.dsl.TestExtension
-import com.android.build.api.variant.AndroidComponentsExtension
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
-import com.android.build.api.variant.VariantOutputConfiguration.OutputType
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.LibraryPlugin
 import org.gradle.api.JavaVersion
@@ -67,7 +65,7 @@ abstract class NewDSLPlugin : Plugin<Project> {
 
             configureAndroidBaseOptions(tomlLibs, project)
 
-             defaultConfig {
+            defaultConfig {
                 targetSdk = tomlLibs.findVersion("targetSdkVersion").get().toString().toInt()
             }
 
@@ -75,7 +73,7 @@ abstract class NewDSLPlugin : Plugin<Project> {
             buildTypes {
                 release { }
                 debug { }
-                configureEach {  }
+                configureEach { }
             }
         }
 
@@ -116,13 +114,13 @@ abstract class NewDSLPlugin : Plugin<Project> {
 
         //buildToolsVersion = project.defaultAndroidConfig.buildToolsVersion
 
-        ndkVersion =  tomlLibs.findVersion("ndkVersion").get().toString()
+        ndkVersion = tomlLibs.findVersion("ndkVersion").get().toString()
 
 
         defaultConfig.apply {
             minSdk = minSdkVersion
             vectorDrawables.useSupportLibrary = true
-            ndk{
+            ndk {
                 abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64")
             }
         }
@@ -138,13 +136,11 @@ abstract class NewDSLPlugin : Plugin<Project> {
 
         compileSdk {
             version = release(compileSdkVersion) {
-                if (compileSdkMinorApiLevel > 0) {
-                    minorApiLevel = compileSdkMinorApiLevel
-                }
+                minorApiLevel = compileSdkMinorApiLevel
             }
         }
 
-        externalNativeBuild.cmake{
+        externalNativeBuild.cmake {
             buildStagingDirectory = File(System.getProperty("user.home"))
                 .resolve(".build-cxx")
                 .resolve(project.rootProject.name)
