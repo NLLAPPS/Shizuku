@@ -2,7 +2,7 @@
 
 
     <!-- To translators: you can leave your here -->
-    <string name="translation_contributors" >Contributors</string>
+    <string name="translation_contributors">Contributors</string>
 
     <!-- Home - Status -->
     <string name="home_status_service_is_running">%1$s is running</string>
@@ -184,8 +184,8 @@
     <string name="about_view_source_code"><![CDATA[View source code at %s]]></string>
 
     <!-- Start/Stop -->
-     <string name="start">Start</string>
-     <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
     <string name="action_stop">Stop Shizuku</string>
     <string name="dialog_stop_message">Shizuku service will be stopped.</string>
 
