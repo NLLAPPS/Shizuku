@@ -267,4 +267,5 @@
     <string name="dialog_requesting_legacy_message"><![CDATA[<b>%1$s</b> có hỗ trợ Shizuku hiện đại, nhưng nó yêu cầu Shizuku cũ. Điều này có thể do Shizuku đang không chạy, vui lòng kiểm tra ứng dụng Shizuku.<p>Shizuku cũ không được dùng nữa kể từ tháng 3 năm 2019.]]></string>
     <string name="dialog_requesting_legacy_button_open_shizuku">Mở Shizuku</string>
     <string name="wadb_notification_attempt_now">Thử ngay bây giờ</string>
+    <string name="translation_contributors">Người đóng góp</string>
 </resources>
