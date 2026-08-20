@@ -9,25 +9,35 @@ appVersionCode = "13600"
 compileSdkVersion = "37"
 compileSdkMinorApiLevel = "0" # Set to 0 if none
 minSdkVersion = "26"
-targetSdkVersion = "37"
+
+
+
+###### IMPORTANT ######
+###### IMPORTANT ######
+###### In order to change target to 37+ we need to implement https://developer.android.com/privacy-and-security/local-network-permission  ######
+targetSdkVersion = "36"
+###### IMPORTANT ######
+###### IMPORTANT ######
+
+
 javaVersion = "21" # JavaVersion.VERSION_21
 nllPluginVersion = "1.0" # Dummy to satisfy toml version requirement
 copyArtifactsPluginVersion= "1.0" # Dummy to satisfy toml version requirement
 
-agp = "9.2.1"
+agp = "9.3.1"
 kotlin = "2.3.10"
 rikkaRefine = "4.4.0"
 ndkVersion = "29.0.14206865"
 annotation = "1.10.0"
-appcompatVersion = "1.7.1"
+appcompatVersion = "1.8.0"
 appiconloader = "1.5.0"
-bcpkixJdk18on = "1.84"
+bcpkixJdk18on = "1.85"
 boringssl = "20251124"
 browser = "1.10.0"
 compatibility = "2.0.0"
 core = "6.0.0"
-coreKtxVersion = "1.18.0"
-fragmentKtx = "1.8.9"
+coreKtxVersion = "1.19.0"
+fragmentKtx = "1.9.0"
 gson = "2.14.0"
 hiddenapibypass = "6.1"
 hidden-api = "4.4.0"
@@ -36,7 +46,7 @@ kotlinxCoroutinesAndroid = "1.11.0"
 # Must match the ndkVersion?
 libcxx = "29.0.14206865"
 lifecycleResourceLivedata = "1.0.1"
-lifecycleViewmodelKtx = "2.10.0"
+lifecycleViewmodelKtx = "2.11.0"
 material = "1.14.0"
 parcelablelist = "2.0.1"
 preferenceKtx = "1.2.1"
