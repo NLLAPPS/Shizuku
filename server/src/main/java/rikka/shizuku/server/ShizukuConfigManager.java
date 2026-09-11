@@ -25,7 +25,8 @@ import java.util.Set;
 
 import kotlin.collections.ArraysKt;
 import rikka.hidden.compat.PackageManagerApis;
-import rikka.hidden.compat.PermissionManagerApis;
+import rikka.shizuku.server.util.Android17Compat;
+import rikka.shizuku.server.util.InstalledPackagesCompat;
 import rikka.hidden.compat.UserManagerApis;
 import rikka.shizuku.server.ktx.HandlerKt;
 
@@ -149,7 +150,7 @@ public class ShizukuConfigManager extends ConfigManager {
         }
 
         for (int userId : UserManagerApis.getUserIdsNoThrow()) {
-            for (PackageInfo pi : PackageManagerApis.getInstalledPackagesNoThrow(PackageManager.GET_PERMISSIONS, userId)) {
+            for (PackageInfo pi : InstalledPackagesCompat.getInstalledPackagesNoThrow(PackageManager.GET_PERMISSIONS, userId)) {
                 if (pi == null
                         || pi.applicationInfo == null
                         || pi.requestedPermissions == null
@@ -160,7 +161,7 @@ public class ShizukuConfigManager extends ConfigManager {
                 int uid = pi.applicationInfo.uid;
                 boolean allowed;
                 try {
-                    allowed = PermissionManagerApis.checkPermission(PERMISSION, uid) == PackageManager.PERMISSION_GRANTED;
+                    allowed = Android17Compat.checkPermission(PERMISSION, uid) == PackageManager.PERMISSION_GRANTED;
                 } catch (Throwable e) {
                     LOGGER.w("checkPermission");
                     continue;

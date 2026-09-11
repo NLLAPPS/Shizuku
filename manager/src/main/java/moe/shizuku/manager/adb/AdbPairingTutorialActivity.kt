@@ -1,15 +1,18 @@
 package moe.shizuku.manager.adb
 
+import android.Manifest
 import android.app.AppOpsManager
 import android.app.ForegroundServiceStartNotAllowedException
 import android.app.NotificationManager
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
@@ -32,7 +35,7 @@ class AdbPairingTutorialActivity : AppBarActivity() {
         val context = this
 
         binding = AdbPairingTutorialActivityBinding.inflate(layoutInflater, rootView, true)
-        
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         notificationEnabled = isNotificationEnabled()
@@ -92,7 +95,32 @@ class AdbPairingTutorialActivity : AppBarActivity() {
         }
     }
 
+    // Android 17 (SDK 37) gates local-network access behind ACCESS_LOCAL_NETWORK;
+    // Android 16 (SDK 36) uses NEARBY_WIFI_DEVICES. Without a runtime grant the OS
+    // intercepts the pairing connection with an endless "choose a device" picker.
+    private fun localNetworkPermission(): String? = when {
+        Build.VERSION.SDK_INT >= 37 -> "android.permission.ACCESS_LOCAL_NETWORK"
+        Build.VERSION.SDK_INT >= 36 -> Manifest.permission.NEARBY_WIFI_DEVICES
+        else -> null
+    }
+
+    private val localNetworkPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) {
+            // Start pairing whether or not the grant succeeded; a denial simply means
+            // discovery/connect will fail and the service surfaces the error.
+            doStartPairingService()
+        }
+
     private fun startPairingService() {
+        val permission = localNetworkPermission()
+        if (permission != null && checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+            localNetworkPermissionLauncher.launch(permission)
+        } else {
+            doStartPairingService()
+        }
+    }
+
+    private fun doStartPairingService() {
         val intent = AdbPairingService.startIntent(this)
         try {
             startForegroundService(intent)

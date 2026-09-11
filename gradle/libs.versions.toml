@@ -4,34 +4,27 @@ appExtraBinder ="moe.shizuku.privileged.api.intent.extra.BINDER"
 
 
 
-appVersionName = "13.6.0"
-appVersionCode = "13600"
+appVersionName = "13.7.0"
+appVersionCode = "13700"
 compileSdkVersion = "37"
 compileSdkMinorApiLevel = "0" # Set to 0 if none
 minSdkVersion = "26"
+targetSdkVersion = "37"
 
-
-
-###### IMPORTANT ######
-###### IMPORTANT ######
-###### In order to change target to 37+ we need to implement https://developer.android.com/privacy-and-security/local-network-permission  ######
-targetSdkVersion = "36"
-###### IMPORTANT ######
-###### IMPORTANT ######
 
 
 javaVersion = "21" # JavaVersion.VERSION_21
 nllPluginVersion = "1.0" # Dummy to satisfy toml version requirement
 copyArtifactsPluginVersion= "1.0" # Dummy to satisfy toml version requirement
 
-agp = "9.3.1"
+agp = "9.4.0"
 kotlin = "2.3.10"
 rikkaRefine = "4.4.0"
 ndkVersion = "29.0.14206865"
 annotation = "1.10.0"
 appcompatVersion = "1.8.0"
 appiconloader = "1.5.0"
-bcpkixJdk18on = "1.85"
+bcpkixJdk18on = "1.86"
 boringssl = "20251124"
 browser = "1.10.0"
 compatibility = "2.0.0"
