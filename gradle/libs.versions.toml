@@ -4,8 +4,8 @@ appExtraBinder ="moe.shizuku.privileged.api.intent.extra.BINDER"
 
 
 
-appVersionName = "13.7.0"
-appVersionCode = "13700"
+appVersionName = "13.8.0"
+appVersionCode = "13800"
 compileSdkVersion = "37"
 compileSdkMinorApiLevel = "0" # Set to 0 if none
 minSdkVersion = "26"
