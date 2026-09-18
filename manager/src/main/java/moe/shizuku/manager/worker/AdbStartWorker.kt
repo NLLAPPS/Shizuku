@@ -95,6 +95,9 @@ class AdbStartWorker(context: Context, params: WorkerParameters) : CoroutineWork
                                 if (intent.action == Intent.ACTION_USER_PRESENT) {
                                     context.unregisterReceiver(this)
                                     unlockReceiver = null
+                                    /**
+                                     *  Android 17 redacts Settings.Global.ADB_ENABLED to 0 for third-party apps, This setting would have not affect on 17+
+                                     */
                                     Settings.Global.putInt(cr, "adb_wifi_enabled", 1)
                                 }
                             }
@@ -107,6 +110,9 @@ class AdbStartWorker(context: Context, params: WorkerParameters) : CoroutineWork
 
                 val observer = object : ContentObserver(null) {
                     override fun onChange(selfChange: Boolean) {
+                        /**
+                         *  Android 17 redacts Settings.Global.ADB_ENABLED to 0 for third-party apps, This setting would have not affect on 17+
+                         */
                         when (Settings.Global.getInt(cr, "adb_wifi_enabled", 0)) {
                             0 -> if (awaitingAuth) {
                                 close(SecurityException("Network is not authorized for wireless debugging"))
@@ -115,7 +121,9 @@ class AdbStartWorker(context: Context, params: WorkerParameters) : CoroutineWork
                         }
                     }
                 }
-
+                /**
+                 *  Android 17 redacts Settings.Global.ADB_ENABLED to 0 for third-party apps, This setting would have not affect on 17+
+                 */
                 Settings.Global.putInt(cr, "adb_wifi_enabled", 1)
                 cr.registerContentObserver(Settings.Global.getUriFor("adb_wifi_enabled"), false, observer)
                 startDiscoveryWithTimeout()

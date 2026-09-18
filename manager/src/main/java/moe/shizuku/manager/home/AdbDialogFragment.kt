@@ -56,8 +56,12 @@ class AdbDialogFragment : DialogFragment() {
     private fun onDialogShow(dialog: AlertDialog) {
         adbMdns.start()
         val context = dialog.context
-        if (context.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED)
+        if (context.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED) {
+            /**
+             *  Android 17 redacts Settings.Global.ADB_ENABLED to 0 for third-party apps, This setting would have not affect on 17+
+             */
             Settings.Global.putInt(context.contentResolver, "adb_wifi_enabled", 1)
+        }
 
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
             SettingsPage.Developer.HighlightWirelessDebugging.launch(context)

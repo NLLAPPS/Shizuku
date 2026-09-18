@@ -66,8 +66,12 @@ object AdbStarter {
                 }
             }
         } finally {
-            if (context.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED)
+            if (context.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED) {
+                /**
+                 *  Android 17 redacts Settings.Global.ADB_ENABLED to 0 for third-party apps, This setting would have not affect on 17+
+                 */
                 Settings.Global.putInt(context.contentResolver, "adb_wifi_enabled", 0)
+            }
         }
     }
 
@@ -78,9 +82,10 @@ object AdbStarter {
                 Settings.Global.putInt(cr, Settings.Global.ADB_ENABLED, 1)
                 Settings.Global.putLong(cr, "adb_allowed_connection_time", 0L)
             }
-        
-            val adbEnabled = Settings.Global.getInt(cr, Settings.Global.ADB_ENABLED, 0)
-            if (adbEnabled == 0) throw IllegalStateException("ADB is not enabled")
+
+            if (!EnvironmentUtils.isAdbEnabled()) {
+                throw IllegalStateException("ADB is not enabled")
+            }
 
             ShizukuStateMachine.set(ShizukuStateMachine.State.STOPPING)
             val key = AdbKey(PreferenceAdbKeyStore(ShizukuSettings.getPreferences()), "shizuku")

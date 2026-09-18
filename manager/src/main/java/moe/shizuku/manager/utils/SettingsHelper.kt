@@ -1,20 +1,21 @@
 package moe.shizuku.manager.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
-import androidx.activity.result.ActivityResultLauncher
 import android.os.PowerManager
 import android.provider.Settings
-import moe.shizuku.manager.utils.SettingsPage
+import androidx.activity.result.ActivityResultLauncher
+import androidx.core.net.toUri
 
 object SettingsHelper {
 
     fun launchOrHighlightWirelessDebugging(context: Context) {
-        val adbEnabled = Settings.Global.getInt(context.contentResolver, Settings.Global.ADB_ENABLED, 0)
-        if (adbEnabled > 0) {
+        if (EnvironmentUtils.isAdbEnabled()) {
             SettingsPage.Developer.WirelessDebugging.launch(context)
-        } else SettingsPage.Developer.HighlightWirelessDebugging.launch(context)
+        } else {
+            SettingsPage.Developer.HighlightWirelessDebugging.launch(context)
+        }
     }
 
     fun isIgnoringBatteryOptimizations(context: Context): Boolean {
@@ -22,9 +23,10 @@ object SettingsHelper {
         return pm.isIgnoringBatteryOptimizations(context.packageName)
     }
 
+    @SuppressLint("BatteryLife")
     fun requestIgnoreBatteryOptimizations(context: Context, launcher: ActivityResultLauncher<Intent>? = null) {
         val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
-            setData(Uri.parse("package:" + context.packageName))
+            data = ("package:" + context.packageName).toUri()
         }
         if (launcher != null) {
             launcher.launch(intent)
